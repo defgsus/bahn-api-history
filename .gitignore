@@ -1,0 +1,6 @@
+test/export/
+env/
+.idea/
+*.iml
+__pycache__/
+*.pyc
