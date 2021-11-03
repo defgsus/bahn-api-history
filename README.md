@@ -58,24 +58,24 @@ each snapshot regardless if the object is changed or does not yet exist.
 
 ### free parking lots
  
-50 objects, 48752 snapshots, 37979 changes
+50 objects, 48766 snapshots, 38012 changes
 
 |     id | name                                                                                |   num changes |
 |-------:|:------------------------------------------------------------------------------------|--------------:|
-| 100054 | Düren P1 Düren P1 Parkplatz Ludwig-Erhardt-Platz                                    |          4062 |
+| 100054 | Düren P1 Düren P1 Parkplatz Ludwig-Erhardt-Platz                                    |          4068 |
 | 100084 | Frankfurt (Main) Hbf P4 Frankfurt (Main) Hbf Bustasche                              |          3412 |
 | 100201 | Mainz Hbf P3 Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1                         |          3223 |
-| 100083 | Frankfurt (Main) Hbf P3 Frankfurt (Main) Hbf P3 Vorfahrt II                         |          2935 |
-| 100280 | Stuttgart-Bad Cannstatt P3 Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          2486 |
+| 100083 | Frankfurt (Main) Hbf P3 Frankfurt (Main) Hbf P3 Vorfahrt II                         |          2941 |
+| 100280 | Stuttgart-Bad Cannstatt P3 Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          2487 |
 | 100279 | Stuttgart-Bad Cannstatt P2 Bad Cannstatt P2 Parkhaus Wilhelmsplatz Ebenen -1 bis 6  |          2182 |
-| 100090 | Freiburg (Breisgau) Hbf P1 Freiburg (Breisgau) Hbf P1 Tiefgarage am Bahnhof         |          1645 |
-| 100291 | Ulm Hbf P2 Ulm Hbf P2 Parkplatz                                                     |          1517 |
-| 100023 | Berlin Ostbahnhof P1 Berlin Ostbahnhof P1 Parkplatz                                 |          1360 |
+| 100090 | Freiburg (Breisgau) Hbf P1 Freiburg (Breisgau) Hbf P1 Tiefgarage am Bahnhof         |          1647 |
+| 100291 | Ulm Hbf P2 Ulm Hbf P2 Parkplatz                                                     |          1519 |
+| 100023 | Berlin Ostbahnhof P1 Berlin Ostbahnhof P1 Parkplatz                                 |          1362 |
 | 100066 | Duisburg Hbf P2 Duisburg Hbf P2 Parkhaus UCI                                        |          1332 |
 
 ### elevator status
  
-3705 objects, 10381 snapshots, 304296 changes
+3705 objects, 10385 snapshots, 304421 changes
 
 |       id | name                                                 |   num changes |
 |---------:|:-----------------------------------------------------|--------------:|
