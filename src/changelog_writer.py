@@ -101,14 +101,19 @@ class ChangelogWriter:
         return sorted_data
 
     def get_changelog_files(self) -> List[Path]:
-        return sorted(Path(f) for f in glob.glob(str(self.export_path / "*.json"), recursive=True))
+        return sorted(
+            Path(f)
+            for f in glob.glob(str(self.export_path / "*.json"), recursive=True)
+            if not f.endswith("-snapshots.json")
+        )
 
-    def import_files(self, path: Union[str, Path]):
+    def publish_files(self, path: Union[str, Path]):
         path = Path(path)
 
         objects = dict()
         unlisted_object_ids = set()
         changelog = dict()
+        snapshot_dates = []
         previous_date_bucket = None
 
         min_date = None
@@ -128,13 +133,16 @@ class ChangelogWriter:
                 path, min_date=min_date, tqdm_desc=f"{path.name} >= {min_date}"
         ):
             data = self.sorted_object(data)
+            snapshot_dates.append(dt.isoformat())
 
             date_bucket = self.get_date_bucket(dt)
             if date_bucket != previous_date_bucket:
                 if changelog:
                     os.makedirs(self.export_path, exist_ok=True)
-                    self.store_changelog(self.export_path / f"{previous_date_bucket}.json", changelog)
+                    self.store_changelog(self.export_path / f"{previous_date_bucket}", changelog, snapshot_dates)
+
                 # reset log
+                snapshot_dates = []
                 changelog = {
                     obj_id: [{
                         "date": dt.isoformat(),
@@ -188,14 +196,14 @@ class ChangelogWriter:
 
         if changelog:
             os.makedirs(self.export_path, exist_ok=True)
-            self.store_changelog(self.export_path / f"{previous_date_bucket}.json", changelog)
+            self.store_changelog(self.export_path / f"{previous_date_bucket}", changelog, snapshot_dates)
 
     @classmethod
-    def store_changelog(cls, filename: Union[str, Path], export_data: dict):
+    def store_changelog(cls, filename: Union[str, Path], export_data: dict, snapshot_dates: List[str]):
         export_data = cls.sorted_object(export_data)
 
-        print("writing", filename)
-        with open(str(filename), "wt") as fp:
+        print("writing", str(filename) + ".json")
+        with open(str(filename) + ".json", "wt") as fp:
             print("{", file=fp)
             for i, obj_id in enumerate(sorted(export_data)):
                 print(f'  "{obj_id}": [', file=fp)
@@ -207,6 +215,7 @@ class ChangelogWriter:
                 print(f'  ]{comma}', file=fp)
             print("}", file=fp)
 
-        #for obj_id in sorted(export_data, key=lambda k: len(export_data[k])):
-        #    print(obj_id, len(export_data[obj_id]))
+        print("writing", str(filename) + "-snapshots.json")
+        with open(str(filename) + "-snapshots.json", "wt") as fp:
+            json.dump(sorted(snapshot_dates), fp, indent=2)
 

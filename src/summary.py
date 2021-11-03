@@ -44,7 +44,7 @@ def summary(object_type: str) -> str:
             name += " " + data["type"] + " " + data["description"]
         elif object_type == "stations":
             name = data["name"]
-        
+
         rows.append({
             "id": obj_id,
             "name": name,

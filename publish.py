@@ -46,13 +46,13 @@ def render_readme():
 
 def main(args):
     if args.stations:
-        StationsChangelogWriter().import_files(args.stations)
+        StationsChangelogWriter().publish_files(args.stations)
 
     if args.elevators:
-        ElevatorsChangelogWriter().import_files(args.elevators)
+        ElevatorsChangelogWriter().publish_files(args.elevators)
 
     if args.parking:
-        ParkingChangelogWriter().import_files(args.parking)
+        ParkingChangelogWriter().publish_files(args.parking)
 
     if args.readme:
         render_readme()

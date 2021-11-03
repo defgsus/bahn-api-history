@@ -36,7 +36,7 @@ class TestTheChangelogWriter(unittest.TestCase):
 
         for i in range(2):
             # second time will be an update of 2001
-            writer.import_files(PATH / "data")
+            writer.publish_files(PATH / "data")
 
             self.assert_file(
                 writer.export_path / "2000.json",
