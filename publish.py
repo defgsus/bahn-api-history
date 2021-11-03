@@ -1,9 +1,9 @@
 import argparse
 from pathlib import Path
 
-from src.stations import StationsChangelogWriter
-from src.elevators import ElevatorsChangelogWriter
-from src.parking import ParkingChangelogWriter
+from src.publish import (
+    StationsChangelogWriter, ElevatorsChangelogWriter, ParkingChangelogWriter
+)
 from src.summary import summary
 
 
