@@ -12,6 +12,7 @@ def summary(object_type: str) -> str:
     num_snapshots = 0
     num_changes = dict()
     objects = dict()
+    min_date, max_date = None, None
     stations = StationMapper()
 
     changelog_files = ChangelogReader.get_changelog_files(object_type)
@@ -23,6 +24,11 @@ def summary(object_type: str) -> str:
 
         for obj_id, changelog in cl.data.items():
             num_changes[obj_id] = num_changes.get(obj_id, 0) + len(changelog)
+            if min_date is None or min_date > changelog[0]["date"]:
+                min_date = changelog[0]["date"]
+            if max_date is None or max_date < changelog[-1]["date"]:
+                max_date = changelog[-1]["date"]
+
             if obj_id not in objects:
                 for dt, data in cl.iter_object(obj_id):
                     if data:
@@ -34,6 +40,7 @@ def summary(object_type: str) -> str:
     md = f"{len(num_changes)} objects" \
          f", {num_snapshots} snapshots" \
          f", {sum(num_changes.values())} changes" \
+         f", ({min_date} - {max_date})" \
          f"\n\n"
 
     rows = []

@@ -58,7 +58,7 @@ each snapshot regardless if the object is changed or does not yet exist.
 
 ### free parking lots
  
-50 objects, 48766 snapshots, 38012 changes
+50 objects, 48766 snapshots, 38012 changes, (2020-01-25T23:27:15 - 2021-11-03T16:00:01)
 
 |     id | name                                                                                |   num changes |
 |-------:|:------------------------------------------------------------------------------------|--------------:|
@@ -75,7 +75,7 @@ each snapshot regardless if the object is changed or does not yet exist.
 
 ### elevator status
  
-3705 objects, 10385 snapshots, 304421 changes
+3705 objects, 10385 snapshots, 304421 changes, (2020-01-25T23:16:01 - 2021-11-03T16:01:01)
 
 |       id | name                                                 |   num changes |
 |---------:|:-----------------------------------------------------|--------------:|
@@ -92,7 +92,7 @@ each snapshot regardless if the object is changed or does not yet exist.
 
 ### stations
  
-5402 objects, 627 snapshots, 50503 changes
+5402 objects, 627 snapshots, 50503 changes, (2020-01-27T12:43:06 - 2021-11-03T07:05:01)
 
 |   id | name                         |   num changes |
 |-----:|:-----------------------------|--------------:|
