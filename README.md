@@ -25,18 +25,18 @@
  
 3705 objects, 303904 changes
 
-|       id | name                             |   num changes |
-|---------:|:---------------------------------|--------------:|
-| 10556568 | 6292 zum Gleis 4/5               |          1195 |
-| 10556569 | 6292 zu Gleis 1                  |          1193 |
-| 10556567 | 6292 zum Gleis 2/3               |          1191 |
-| 10248843 | 5169 von Empfangshalle zu Brücke |           890 |
-| 10417241 | 4787 zu Gleis 4/5                |           838 |
-| 10354470 | 4787 zu Gleis 1                  |           836 |
-| 10248859 | 5169 von Empfangshalle zu Brücke |           835 |
-| 10460422 | 1200 zu Gleis 2/3                |           834 |
-| 10417240 | 4787 zu Gleis 2/3                |           826 |
-| 10466017 | 3593 zu Gleis 2/3                |           818 |
+|       id | name                                                 |   num changes |
+|---------:|:-----------------------------------------------------|--------------:|
+| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1195 |
+| 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1193 |
+| 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1191 |
+| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |           890 |
+| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |           838 |
+| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |           836 |
+| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |           835 |
+| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |           834 |
+| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |           826 |
+| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |           818 |
 
 ### stations
  
