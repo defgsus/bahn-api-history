@@ -1,5 +1,6 @@
 import argparse
 from pathlib import Path
+from multiprocessing import Process
 
 from src.publish import (
     StationsChangelogWriter, ElevatorsChangelogWriter, ParkingChangelogWriter
@@ -45,14 +46,20 @@ def render_readme():
 
 
 def main(args):
+    procs = []
+
     if args.stations:
-        StationsChangelogWriter().publish_files(args.stations)
+        procs.append(Process(target=lambda : StationsChangelogWriter().publish_files(args.stations)))
 
     if args.elevators:
-        ElevatorsChangelogWriter().publish_files(args.elevators)
+        procs.append(Process(target=lambda : ElevatorsChangelogWriter().publish_files(args.elevators)))
 
     if args.parking:
-        ParkingChangelogWriter().publish_files(args.parking)
+        procs.append(Process(target=lambda : ParkingChangelogWriter().publish_files(args.parking)))
+
+    if procs:
+        [t.start() for t in procs]
+        [t.join() for t in procs]
 
     if args.readme:
         render_readme()
