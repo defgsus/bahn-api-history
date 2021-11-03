@@ -1,5 +1,5 @@
 notebooks/
-test/export/
+src/tests/export/
 env/
 .idea/
 *.iml
