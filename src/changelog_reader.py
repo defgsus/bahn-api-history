@@ -24,11 +24,19 @@ class ChangelogReader:
             at = at.isoformat()
 
         cur_data = None
-        for changelog in self.data[obj_id]:
-            dt = changelog["date"]
+        for dt, data in self.iter_object(obj_id):
 
             if at and dt > at:
                 return cur_data
+
+            cur_data = data
+
+        return cur_data
+
+    def iter_object(self, obj_id: str) -> Generator[Tuple[str, Optional[dict]], None, None]:
+        cur_data = None
+        for changelog in self.data[obj_id]:
+            dt = changelog["date"]
 
             for change_key in changelog:
                 if change_key == "date":
@@ -66,7 +74,7 @@ class ChangelogReader:
                 else:
                     raise ValueError(f"Unhandled change-key '{change_key}'")
 
-        return cur_data
+            yield dt, cur_data
 
     def _get_sub_object(self, data: dict, path: Union[str, List[str]]):
         obj = data
