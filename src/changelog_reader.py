@@ -1,4 +1,5 @@
 from pathlib import Path
+import glob
 import json
 import datetime
 import dateutil.parser
@@ -8,9 +9,26 @@ from typing import Union, Generator, Tuple, List, Optional
 
 class ChangelogReader:
 
-    def __init__(self, filename: Union[str, Path]):
-        self.filename = Path(filename)
-        self.data = json.loads(self.filename.read_text())
+    def __init__(self, changelog_filename: Union[str, Path], dates_filename: Union[str, Path]):
+        self.changelog_filename = Path(changelog_filename)
+        self.dates_filename = Path(dates_filename)
+        self.data = json.loads(self.changelog_filename.read_text())
+        self.dates = json.loads(self.dates_filename.read_text())
+
+    @classmethod
+    def get_changelog_files(cls, type: Optional[str] = None, path: Optional[Path] = None) -> List[Tuple[Path, Path]]:
+        if path is None:
+            if type is None:
+                raise ValueError("Must specify 'type' or 'path'")
+            path = Path(__file__).resolve().parent.parent / "docs" / "data" / type
+        changelog_files = sorted(glob.glob(str(path / "*-changelog.json"), recursive=True))
+        dates_files = sorted(glob.glob(str(path / "*-dates.json"), recursive=True))
+        if len(changelog_files) != len(dates_files):
+            raise AssertionError(f"'-changelog' and '-dates' files do not match: {changelog_files} {dates_files}")
+        return [
+            (Path(f1), Path(f2))
+            for f1, f2 in zip(changelog_files, dates_files)
+        ]
 
     def object_ids(self) -> Generator[str, None, None]:
         return self.data.keys()
@@ -35,46 +53,76 @@ class ChangelogReader:
 
     def iter_object(self, obj_id: str) -> Generator[Tuple[str, Optional[dict]], None, None]:
         cur_data = None
-        for changelog in self.data[obj_id]:
+        previous_dt = None
+        yielded_dt = None
+        changelogs = self.data[obj_id]
+        for i, changelog in enumerate(changelogs):
+
             dt = changelog["date"]
+            previous_data = cur_data
+            cur_data = self._process_changelog(dt, obj_id, changelog, cur_data)
 
-            for change_key in changelog:
-                if change_key == "date":
-                    continue
+            if previous_dt and dt != previous_dt:# and i + 1 < len(changelogs):
+                yield previous_dt, previous_data
+                yielded_dt = previous_dt
 
-                elif change_key == "init":
-                    cur_data = deepcopy(changelog["init"])
+            previous_dt = dt
 
-                elif change_key == "not_listed":
-                    cur_data = None
+        if previous_dt and yielded_dt != previous_dt:
+            yield previous_dt, cur_data
 
-                elif change_key == "changes":
-                    try:
-                        changes = changelog["changes"]
-                        assert cur_data, f"cur_data not present for 'changes' entry '{obj_id}' @ {dt}"
-                        for change_type in changes.keys():
-                            if change_type == "add":
-                                for entry in changes[change_type]:
-                                    self._add_object_value(cur_data, entry["path"], entry["value"])
+    def iter_object_snapshots(self, obj_id: str) -> Generator[Tuple[str, Optional[dict]], None, None]:
+        dates = self.dates.copy()
+        cur_data = None
+        for dt, data in self.iter_object(obj_id):
+            while dates and dt > dates[0]:
+                yield dates[0], cur_data
+                dates.pop(0)
+            cur_data = data
 
-                            elif change_type == "remove":
-                                for entry in changes[change_type]:
-                                    self._remove_object_value(cur_data, entry["path"])
+        while dates:
+            yield dates[0], cur_data
+            dates.pop(0)
 
-                            elif change_type == "replace":
-                                for entry in changes[change_type]:
-                                    self._set_object_value(cur_data, entry["path"], entry["value"])
+    def _process_changelog(self, dt: str, obj_id: str, changelog: dict, cur_data: Optional[dict]):
+        for change_key in changelog:
+            if change_key == "date":
+                continue
 
-                            else:
-                                raise ValueError(f"Unhandled change-type '{change_type}'")
+            elif change_key == "init":
+                cur_data = deepcopy(changelog["init"])
 
-                    except Exception as e:
-                        raise Exception(f"{e}\n\n{obj_id}: changelog: {changelog}")
+            elif change_key == "not_listed":
+                cur_data = None
 
-                else:
-                    raise ValueError(f"Unhandled change-key '{change_key}'")
+            elif change_key == "changes":
+                try:
+                    changes = changelog["changes"]
+                    assert cur_data, f"cur_data not present for 'changes' entry '{obj_id}' @ {dt}"
+                    cur_data = deepcopy(cur_data)
+                    for change_type in changes.keys():
+                        if change_type == "add":
+                            for entry in changes[change_type]:
+                                self._add_object_value(cur_data, entry["path"], entry["value"])
 
-            yield dt, cur_data
+                        elif change_type == "remove":
+                            for entry in changes[change_type]:
+                                self._remove_object_value(cur_data, entry["path"])
+
+                        elif change_type == "replace":
+                            for entry in changes[change_type]:
+                                self._set_object_value(cur_data, entry["path"], entry["value"])
+
+                        else:
+                            raise ValueError(f"Unhandled change-type '{change_type}'")
+
+                except Exception as e:
+                    raise Exception(f"{e}\n\n{obj_id}: changelog: {changelog}")
+
+            else:
+                raise ValueError(f"Unhandled change-key '{change_key}'")
+
+        return cur_data
 
     def _get_sub_object(self, data: dict, path: Union[str, List[str]]):
         obj = data

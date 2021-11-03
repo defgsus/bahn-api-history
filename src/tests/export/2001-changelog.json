@@ -6,5 +6,10 @@
   "2": [
     {"date": "2001-01-01T00:00:00", "init": {"id": 2, "value": "b2"}},
     {"changes": {"replace": [{"path": "value", "value": "b3"}]}, "date": "2001-01-01T00:00:00"}
+  ],
+  "3": [
+    {"date": "2001-01-01T00:00:00", "init": {"id": 3, "value": "c"}},
+    {"date": "2001-01-01T00:00:00", "not_listed": true},
+    {"date": "2001-01-02T00:00:00", "init": {"id": 3, "value": "c"}}
   ]
 }
