@@ -9,15 +9,17 @@ from .stations import StationMapper
 
 
 def summary(object_type: str) -> str:
+    num_snapshots = 0
     num_changes = dict()
     objects = dict()
     stations = StationMapper()
 
-    path = Path(__file__).resolve().parent.parent / "docs" / "data" / object_type
-    changelog_files = sorted(glob.glob(str(path / "*.json")))
+    changelog_files = ChangelogReader.get_changelog_files(object_type)
+
     for fn in changelog_files:
-        print("reading", fn, file=sys.stderr)
-        cl = ChangelogReader(fn)
+        print("reading", fn[0], file=sys.stderr)
+        cl = ChangelogReader(*fn)
+        num_snapshots += len(cl.dates)
 
         for obj_id, changelog in cl.data.items():
             num_changes[obj_id] = num_changes.get(obj_id, 0) + len(changelog)
@@ -29,7 +31,10 @@ def summary(object_type: str) -> str:
 
     top_ids = sorted(num_changes, key=lambda k: num_changes[k], reverse=True)[:10]
 
-    md = f"{len(num_changes)} objects, {sum(num_changes.values())} changes\n\n"
+    md = f"{len(num_changes)} objects" \
+         f", {num_snapshots} snapshots" \
+         f", {sum(num_changes.values())} changes" \
+         f"\n\n"
 
     rows = []
     for obj_id in top_ids:

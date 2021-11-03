@@ -1,13 +1,9 @@
-import glob
-from pathlib import Path
 from typing import Optional
 
 from .changelog_reader import ChangelogReader
 
 
 class StationMapper:
-
-    STATIONS_PATH = Path(__file__).resolve().parent.parent / "docs" / "data" / "stations"
 
     def __init__(self):
         self._station_map = dict()
@@ -19,9 +15,9 @@ class StationMapper:
         return self._station_map.get(station_number)
 
     def _load_stations(self):
-        changelog_files = sorted(glob.glob(str(self.STATIONS_PATH / "*.json")))
+        changelog_files = ChangelogReader.get_changelog_files("stations")
         for fn in changelog_files:
-            cl = ChangelogReader(fn)
+            cl = ChangelogReader(*fn)
             for obj_id in cl.object_ids():
 
                 if obj_id not in self._station_map:
