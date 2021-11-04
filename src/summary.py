@@ -37,17 +37,17 @@ def summary(object_type: str) -> str:
 
     top_ids = sorted(num_changes, key=lambda k: num_changes[k], reverse=True)[:10]
 
-    md = f"{len(num_changes)} objects" \
-         f", {num_snapshots} snapshots" \
-         f", {sum(num_changes.values())} changes" \
-         f", ({min_date} - {max_date})" \
+    md = f"{len(num_changes):,} objects" \
+         f", {num_snapshots:,} snapshots" \
+         f", {sum(num_changes.values()):,} changes" \
+         f" ({min_date} - {max_date})" \
          f"\n\n"
 
     rows = []
     for obj_id in top_ids:
         data = objects[obj_id]
         if object_type == "parking":
-            name = data["space"]["title"]
+            name = data["space"]["nameDisplay"]
         elif object_type == "elevators":
             name = str(data["stationnumber"])
             station = stations[name]

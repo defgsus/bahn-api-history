@@ -15,24 +15,24 @@ and the [station facilities status api](https://developer.deutschebahn.com/store
 
 ### free parking lots
  
-50 objects, 48802 snapshots, 38035 changes, (2020-01-25T23:27:15 - 2021-11-03T23:30:01)
+50 objects, 48,802 snapshots, 38,035 changes (2020-01-25T23:27:15 - 2021-11-03T23:30:01)
 
-|     id | name                                                                                |   num changes |
-|-------:|:------------------------------------------------------------------------------------|--------------:|
-| 100054 | Düren P1 Düren P1 Parkplatz Ludwig-Erhardt-Platz                                    |          4073 |
-| 100084 | Frankfurt (Main) Hbf P4 Frankfurt (Main) Hbf Bustasche                              |          3412 |
-| 100201 | Mainz Hbf P3 Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1                         |          3226 |
-| 100083 | Frankfurt (Main) Hbf P3 Frankfurt (Main) Hbf P3 Vorfahrt II                         |          2946 |
-| 100280 | Stuttgart-Bad Cannstatt P3 Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          2488 |
-| 100279 | Stuttgart-Bad Cannstatt P2 Bad Cannstatt P2 Parkhaus Wilhelmsplatz Ebenen -1 bis 6  |          2183 |
-| 100090 | Freiburg (Breisgau) Hbf P1 Freiburg (Breisgau) Hbf P1 Tiefgarage am Bahnhof         |          1647 |
-| 100291 | Ulm Hbf P2 Ulm Hbf P2 Parkplatz                                                     |          1520 |
-| 100023 | Berlin Ostbahnhof P1 Berlin Ostbahnhof P1 Parkplatz                                 |          1363 |
-| 100066 | Duisburg Hbf P2 Duisburg Hbf P2 Parkhaus UCI                                        |          1332 |
+|     id | name                                                     |   num changes |
+|-------:|:---------------------------------------------------------|--------------:|
+| 100054 | Düren P1 Parkplatz Ludwig-Erhardt-Platz                  |          4073 |
+| 100084 | Frankfurt (Main) Hbf Bustasche                           |          3412 |
+| 100201 | Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1           |          3226 |
+| 100083 | Frankfurt (Main) Hbf P3 Vorfahrt II                      |          2946 |
+| 100280 | Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          2488 |
+| 100279 | Bad Cannstatt P2 Parkhaus Wilhelmsplatz Ebenen -1 bis 6  |          2183 |
+| 100090 | Freiburg (Breisgau) Hbf P1 Tiefgarage am Bahnhof         |          1647 |
+| 100291 | Ulm Hbf P2 Parkplatz                                     |          1520 |
+| 100023 | Berlin Ostbahnhof P1 Parkplatz                           |          1363 |
+| 100066 | Duisburg Hbf P2 Parkhaus UCI                             |          1332 |
 
 ### elevator status
  
-3705 objects, 10394 snapshots, 304635 changes, (2020-01-25T23:16:01 - 2021-11-04T01:01:01)
+3,705 objects, 10,394 snapshots, 304,635 changes (2020-01-25T23:16:01 - 2021-11-04T01:01:01)
 
 |       id | name                                                 |   num changes |
 |---------:|:-----------------------------------------------------|--------------:|
@@ -49,7 +49,7 @@ and the [station facilities status api](https://developer.deutschebahn.com/store
 
 ### stations
  
-5402 objects, 627 snapshots, 50503 changes, (2020-01-27T12:43:06 - 2021-11-03T07:05:01)
+5,402 objects, 627 snapshots, 50,503 changes (2020-01-27T12:43:06 - 2021-11-03T07:05:01)
 
 |   id | name                         |   num changes |
 |-----:|:-----------------------------|--------------:|
