@@ -196,10 +196,15 @@ each snapshot regardless if the object is changed or does not yet exist.
 
 ## Some graphics
 
+Below are some plots and crude analysis of the data. The jupyter notebooks 
+used for it are in the [notebooks/](notebooks/) directory.  
+
+### elevators 
+
 Counting the number of elevators and escalators that do not have state
 `ACTIVE` produces this interesting curve:
 
-![plot of defect elevators per day](docs/img/elevators-per-day.png)
+![plot of defect elevators per day](docs/img/defect-elevators-per-day.png)
 
 The different colors represent the amount of time that these machines where
 inactive, 100%% meaning it was inactive the whole day.
@@ -208,3 +213,69 @@ The small repeating pikes align with the working days each week. This is
 probably caused by a mixture of two things: Elevators might tend to break more often 
 when used, and there are certainly more reports/complaints about defect machines
 on workdays, compared to the weekends.
+
+There seems to be a *bad* trend visible. The number of defect machines is growing.
+How many machines are there anyways? Plotting the number of listed IDs per day
+
+![plot of listed elevators per day](docs/img/listed-elevators-per-day.png)
+
+reveals that there are 200 new devices since beginning of 2020. Which is a bigger
+increase than the number of defect devices over the same period. 
+
+
+### stations
+
+Let's just have a look at the number of changes to station data. 
+The data monkeys are somewhat busy:
+
+![plot of number of edited stations per day](docs/img/edited-stations-per-day.png)
+
+There is only one snapshot stored each day, so the 
+number of stations edited per day is equal to the number of all edits per day.
+Also note, that for some stupid reason i setup the cronjob to 7 AM. Unless
+the data monkeys where up early or working through the night, the changes 
+have probably occurred the day before the snapshot! However, i won't change 
+the snapshot time for consistency.  
+
+Some particular dates jump out of the above graph where more than 5000 
+stations are edited during the same day. Here's a list of the top-five
+changes for each of these dates. 
+
+- **`2020-06-03`**
+  - 5455 x replace `ril100Identifiers.geographicCoordinates.coordinates.0`
+  - 5454 x replace `ril100Identifiers.geographicCoordinates.coordinates.1`
+  - 9 x add `ril100Identifiers.geographicCoordinates`
+  - 1 x replace `localServiceStaff.availability.friday.fromTime`
+  - 1 x replace `localServiceStaff.availability.friday.toTime`
+- **`2021-06-03`**
+  - 5399 x remove `hasSteplessAccess`
+  - 5399 x replace `federalState`
+  - 5399 x replace `regionalbereich.shortName`
+  - 5371 x remove `timeTableOffice`
+  - 267 x replace `ril100Identifiers.isMain`
+- **`2021-06-04`**
+  - 5399 x add `hasSteplessAccess`
+  - 5399 x add `timeTableOffice`
+  - 5399 x replace `federalState`
+- **`2021-06-08`**
+  - 5664 x replace `ril100Identifiers.isMain`
+  - 5458 x replace `evaNumbers.isMain`
+  - 1 x replace `mailingAddress.street`
+  - 1 x replace `evaNumbers.4.isMain`
+  - 1 x replace `ril100Identifiers.4.isMain`
+- **`2021-06-17`**
+  - 5464 x replace `ril100Identifiers.geographicCoordinates.coordinates.0`
+  - 5463 x replace `ril100Identifiers.geographicCoordinates.coordinates.1`
+  - 61 x add `ril100Identifiers.geographicCoordinates`
+  - 3 x replace `mailingAddress.street`
+  - 1 x replace `ril100Identifiers.4.geographicCoordinates.coordinates.0`
+- **`2021-06-26`**
+  - 5399 x replace `ril100Identifiers`
+- **`2021-07-02`**
+  - 5399 x replace `ril100Identifiers`
+  - 5397 x replace `evaNumbers.isMain`
+
+First of all, June 3rd (or probably June 2nd) seems to be the traditional day
+to publish updated geo-coords for all stations. In 2021 a couple of major update 
+sessions followed after June 3rd, e.g. the `federalState` was replaced
+with abbreviations, and things got removed and reappeared later. 
