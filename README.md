@@ -13,6 +13,8 @@ and the [station facilities status api](https://developer.deutschebahn.com/store
 
 ## Summary
 
+Each table shows the top-ten most-changed objects.
+
 ### free parking lots
  
 50 objects, 48,994 snapshots, 38,252 changes (2020-01-25T23:27:15 - 2021-11-06T00:30:01)
@@ -235,10 +237,15 @@ each snapshot regardless if the object is changed or does not yet exist.
 
 ## Some graphics
 
+Below are some plots and crude analysis of the data. The jupyter notebooks 
+used for it are in the [notebooks/](notebooks/) directory.  
+
+### elevators 
+
 Counting the number of elevators and escalators that do not have state
 `ACTIVE` produces this interesting curve:
 
-![plot of defect elevators per day](docs/img/elevators-per-day.png)
+![plot of defect elevators per day](docs/img/defect-elevators-per-day.png)
 
 The different colors represent the amount of time that these machines where
 inactive, 100% meaning it was inactive the whole day.
@@ -247,3 +254,130 @@ The small repeating pikes align with the working days each week. This is
 probably caused by a mixture of two things: Elevators might tend to break more often 
 when used, and there are certainly more reports/complaints about defect machines
 on workdays, compared to the weekends.
+
+There seems to be a *bad* trend visible. The number of defect machines is growing.
+How many machines are there anyways? Plotting the number of listed IDs per day..
+
+![plot of listed elevators per day](docs/img/listed-elevators-per-day.png)
+
+..reveals that there are 200 new devices since beginning of 2020. That is a bigger
+increase than the increase of the number of defect devices over the same period. 
+Something else is going on...
+
+
+### parking
+
+The parking data is a little bit lame. Instead of actual numbers of free spots there
+is only a `category` that says:
+
+1. 0 to 10
+2. 11 to 30
+3. 31 to 50
+4. 51 to maximum capacity
+
+First of all, here's the number of places for each day that are 
+ - **listed**: included in the API response list 
+ - **valid**: have the `validData` flag and contain a value for `category`
+ - **active**: a change of `category` was recorded during that day
+
+![plot of listed/valid/active parking spaces per day](docs/img/parking-listed-per-day.png)
+
+The idea of approximating the *percentage of occupation* using the category
+and the capacity becomes less attractive when looking at the capacity changes
+over time:
+
+![plot of parking capacity per day and space](docs/img/parking-capacity-per-day.png)
+
+It's quite hard to explain what's going on there. Some parking lots seem to change
+their maximum capacity regularly every other weekday. Some of them 
+temporarily loose capacity, maybe because of construction sites and some seem
+to mix up their occupation data with the capacity data. Other parking lots 
+seem to grow immensely during a couple of days, or people just type in wrong
+numbers and some else corrects them? 
+
+In face of this totally erratic data, let's just look at pure `category` numbers:
+ 
+![plot of parking "category" per month and station](docs/img/parking-category-per-month.png)
+
+The plot shows only stations with a certain amount of activity and 
+the black line shows the average of these stations. 
+Except for late summer (Aug. to Oct.) there does not seem to be happening much.
+Or in other words, the parking lots do not change 
+their average `category` per month a lot. Also the plot is pretty much unreadable. 
+
+We can also look at the percentage of how much each category is listed. This time
+per day and for all stations:
+ 
+![plot of parking "category" percentage per_day](docs/img/parking-category-percent-per-day.png)
+
+One very significant impact which is visible here is the corona lock-down which
+happened in Germany at about 16th of March 2020, which is exactly the beginning
+of the flat area in the upper green line representing the `> 50` category.
+
+Apart from the category which somehow represents the **number** of free spaces 
+we can simply plot the amount of change. This might go as a measure of
+general activity. Below is plotted the mean absolute difference of
+the category value between two hours, shown as average per week and space:
+
+![plot of parking "category" change per week and space](docs/img/parking-category-changes-per-week.png)
+
+You know, just by looking at that one must judge that *the pandemic* is still going on. 
+
+
+### stations
+
+The number of changes to station data per day tells us that the data monkeys 
+are somewhat busy:
+
+![plot of number of edited stations per day](docs/img/edited-stations-per-day.png)
+
+There is only one snapshot stored each day, so the 
+number of stations edited per day is equal to the number of all edits per day.
+Also note, that for some stupid reason i setup the cronjob to 7 AM. Unless
+the data monkeys where up early or working through the night, the changes 
+have probably occurred the day before the snapshot! However, i won't change 
+the snapshot time for consistency.  
+
+Some particular dates jump out of the above graph where more than 5000 
+stations are edited during the same day. Here's a list of the top-five
+changes for each of these dates. 
+
+- **`2020-06-03`**
+  - 5455 x replace `ril100Identifiers.geographicCoordinates.coordinates.0`
+  - 5454 x replace `ril100Identifiers.geographicCoordinates.coordinates.1`
+  - 9 x add `ril100Identifiers.geographicCoordinates`
+  - 1 x replace `localServiceStaff.availability.friday.fromTime`
+  - 1 x replace `localServiceStaff.availability.friday.toTime`
+- **`2021-06-03`**
+  - 5399 x remove `hasSteplessAccess`
+  - 5399 x replace `federalState`
+  - 5399 x replace `regionalbereich.shortName`
+  - 5371 x remove `timeTableOffice`
+  - 267 x replace `ril100Identifiers.isMain`
+- **`2021-06-04`**
+  - 5399 x add `hasSteplessAccess`
+  - 5399 x add `timeTableOffice`
+  - 5399 x replace `federalState`
+- **`2021-06-08`**
+  - 5664 x replace `ril100Identifiers.isMain`
+  - 5458 x replace `evaNumbers.isMain`
+  - 1 x replace `mailingAddress.street`
+  - 1 x replace `evaNumbers.4.isMain`
+  - 1 x replace `ril100Identifiers.4.isMain`
+- **`2021-06-17`**
+  - 5464 x replace `ril100Identifiers.geographicCoordinates.coordinates.0`
+  - 5463 x replace `ril100Identifiers.geographicCoordinates.coordinates.1`
+  - 61 x add `ril100Identifiers.geographicCoordinates`
+  - 3 x replace `mailingAddress.street`
+  - 1 x replace `ril100Identifiers.4.geographicCoordinates.coordinates.0`
+- **`2021-06-26`**
+  - 5399 x replace `ril100Identifiers`
+- **`2021-07-02`**
+  - 5399 x replace `ril100Identifiers`
+  - 5397 x replace `evaNumbers.isMain`
+
+First of all, June 3rd (or probably June 2nd) seems to be the traditional day
+to publish updated geo-coords for all stations. In 2021 a couple of major update 
+sessions followed after June 3rd, e.g. the `federalState` was replaced
+with abbreviations, which got reverted again, and things got 
+removed and reappeared later. 
