@@ -37,10 +37,10 @@ def summary(object_type: str) -> str:
 
     top_ids = sorted(num_changes, key=lambda k: num_changes[k], reverse=True)[:10]
 
-    md = f"{len(num_changes):,} objects" \
-         f", {num_snapshots:,} snapshots" \
-         f", {sum(num_changes.values()):,} changes" \
-         f" ({min_date} - {max_date})" \
+    md = f"**{len(num_changes):,}** objects" \
+         f", **{num_snapshots:,}** snapshots" \
+         f", **{sum(num_changes.values()):,}** changes" \
+         f" ({min_date.replace('T', ' ')} - {max_date.replace('T', ' ')})" \
          f"\n\n"
 
     rows = []

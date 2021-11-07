@@ -236,7 +236,7 @@ In the above plot, the y axis has been sorted by mean activity during late 2021.
 *Verband Region Stuttgart* is the main cause of trouble, followed by a couple of
 Rhineland-ian associations. The number behind the labels shows the overall number 
 of devices of each *Aufgabenträger*. If *Verband Region Stuttgart* drops from 
-about 90% to 64% mean activity per day through the period of Aug. 2021 to mid September
+about 90%% to 64%% mean activity per day through the period of Aug. 2021 to mid September
 that's quite something. 
 
 I completely don't know Stuttgart by detail so can only guess about. There's this 

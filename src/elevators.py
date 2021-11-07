@@ -70,8 +70,8 @@ def elevators_per_day(
         date_filter: StringFilter = None,
         caching: Union[bool, str] = True,
 ) -> pd.DataFrame:
-    from .stations import StationsMapper
-    station_mapper = StationsMapper.singleton()
+    from .stations import StationMapper
+    station_mapper = StationMapper.singleton()
 
     param_hash = hashlib.md5(f"{id_filter} {date_filter}".encode("utf-8")).hexdigest()
     cache_file = CACHE_PATH / f"elevators-day-{param_hash}.pkl"

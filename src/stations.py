@@ -13,7 +13,7 @@ from .mapper import ObjectMapper
 from .filter import *
 
 
-class StationsMapper(ObjectMapper):
+class StationMapper(ObjectMapper):
 
     def __init__(self):
         super().__init__("stations")
