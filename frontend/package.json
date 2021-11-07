@@ -1,0 +1,23 @@
+{
+  "name": "dbapipast",
+  "version": "0.0.1",
+  "description": "DB API History browser",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --no-source-maps ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bergi",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
+    "parcel": "^2.0.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
