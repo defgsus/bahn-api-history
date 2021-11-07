@@ -1,12 +1,11 @@
 #!/bin/bash
 
 function run_data_server() {
-  cd docs/ || exit
+  cd ../docs/ || exit
   python -m http.server 8008 || exit
 }
 
 function run_web_server() {
-  cd frontend/ || exit
   yarn start || exit
 }
 

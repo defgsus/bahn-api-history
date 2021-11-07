@@ -1,34 +1,25 @@
-import React, { useContext } from "react";
+import React, { useCallback, useContext } from "react";
 import state_context from "../context";
+import Select from "./Select";
+import ChangelogSelect from "./ChangelogSelect";
+import Table from "./Table";
 
 
 const FrontPage = (props) => {
 
     const {
-        api_type, api_types,
-        api_year, api_years,
-        dispatcher
+        objects_table,
+        dispatch,
     } = useContext(state_context);
 
     return (
         <div className={"front"}>
 
-            <select value={api_type} onChange={
-                e => dispatcher({type: "SET_API", payload: {type: e.target.value, year: api_year}})
-            }>
-                {api_types.map(t => (
-                    <option key={t} value={t}>{t}</option>
-                ))}
-            </select>
+            <ChangelogSelect/>
 
-            <select value={api_year} onChange={
-                e => dispatcher({type: "SET_API", payload: {type: api_type, year: e.target.value}})
-            }>
-                {api_years.map(t => (
-                    <option key={t} value={t}>{t}</option>
-                ))}
-            </select>
-
+            {objects_table && <Table
+                {...objects_table}
+            />}
         </div>
     );
 };
