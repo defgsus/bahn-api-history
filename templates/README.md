@@ -225,6 +225,35 @@ How many machines are there anyways? Plotting the number of listed IDs per day..
 increase than the increase of the number of defect devices over the same period. 
 Something else is going on...
 
+Each elevator/escalator device has a `stationnumber` attached. From the station data
+we can get a couple of meta information. After trying a few of them, the 
+`aufgabentraeger` entry seems to relate somewhat with the inactivity during 
+the second half of 2021:
+
+![plot of elevator activity per Aufgabenträger](docs/img/elevators-heatmap-bearer.png)
+
+In the above plot, the y axis has been sorted by mean activity during late 2021. 
+*Verband Region Stuttgart* is the main cause of trouble, followed by a couple of
+Rhineland-ian associations. The number behind the labels shows the overall number 
+of devices of each *Aufgabenträger*. If *Verband Region Stuttgart* drops from 
+about 90% to 64% mean activity per day through the period of Aug. 2021 to mid September
+that's quite something. 
+
+I completely don't know Stuttgart by detail so can only guess about. There's this 
+[construction site](https://www.bahnprojekt-stuttgart-ulm.de/presse/pressemitteilungen/newsdetail/news/1489-veraenderte-wegefuehrung-am-stuttgarter-hbf/newsParameter/detail/News/datum/20190704/).
+at the main station which perfectly matches the date. Only that *Stuttgart Hauptbahnhof*
+belongs to *Nahverkehrsgesellschaft Baden-Württemberg mbH* and they don't show that
+dropout of activity.`
+ 
+Plotting the change of device activity between early and late 2021 per geo-position
+makes the finger-pointing even easier:
+ 
+![plot of change of activity between first and second half of 2021](docs/img/elevators-compare-activity.png)
+
+I admit, there are a lot of elevators in the Rhineland (west) and i wouldn't want
+to manage them all. Stuttgart is the big spot in the south-west, 
+Berlin (east) and Hamburg (north) also seem to have evolved ongoing problems.
+
 
 ### parking
 
