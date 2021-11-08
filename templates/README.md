@@ -10,7 +10,7 @@ This repo contains non of the train schedule data. Instead it has change-logs of
 and the [station facilities status api](https://developer.deutschebahn.com/store/apis/info?name=FaSta-Station_Facilities_Status&version=v2&provider=DBOpenData)
 (status of elevators and escalators), **collected since late January 2020**.
 
-Everything is browsable in the [static data page](https://defgsus.github.com/bahn-api-history/).
+Everything is browsable in the [static data page](https://defgsus.github.io/bahn-api-history/).
 
 
 ## Summary
