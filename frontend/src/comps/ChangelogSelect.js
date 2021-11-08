@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from "react";
+import React, { memo, useCallback, useContext } from "react";
 import state_context from "../context";
 import Select from "./Select";
 
@@ -49,5 +49,5 @@ const ChangelogSelect = () => {
     );
 };
 
-export default ChangelogSelect;
+export default memo(ChangelogSelect);
 

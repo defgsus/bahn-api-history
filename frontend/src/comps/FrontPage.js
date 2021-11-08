@@ -5,21 +5,44 @@ import ChangelogSelect from "./ChangelogSelect";
 import Table from "./Table";
 
 
-const FrontPage = (props) => {
+const FrontPage = () => {
 
     const {
-        objects_table,
+        error,
+        objects_table, table_loading,
         dispatch,
     } = useContext(state_context);
+
+    const set_table_page = useCallback(v => {
+        dispatch({type: "SET_TABLE_PARAMS", payload: {page: v}})
+    }, []);
+
+    const set_table_per_page = useCallback(v => {
+        dispatch({type: "SET_TABLE_PARAMS", payload: {per_page: v}})
+    }, []);
+
+    const set_table_sort = useCallback((c, a) => {
+        dispatch({type: "SET_TABLE_PARAMS", payload: {sort_by: c, sort_asc: a}})
+    }, []);
 
     return (
         <div className={"front"}>
 
             <ChangelogSelect/>
 
-            {objects_table && <Table
-                {...objects_table}
-            />}
+            {error ? <div className={"error"}>{error}</div> : null}
+
+            {table_loading
+                ? "loading..."
+                : objects_table
+                    ? <Table
+                        {...objects_table}
+                        set_page={set_table_page}
+                        set_per_page={set_table_per_page}
+                        set_sort={set_table_sort}
+                    />
+                    :  null
+            }
         </div>
     );
 };

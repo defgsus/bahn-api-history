@@ -1,0 +1,41 @@
+@import "comps/Number";
+@import "comps/Table";
+
+
+#app-container {
+  position: relative;
+
+  #app {
+    width: 70%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .hidden {
+      display: none;
+    }
+
+    .clickable {
+      cursor: pointer;
+    }
+
+    .grid-x {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      &.margin-right > * {
+        margin-right: .5rem;
+      }
+
+      .grow {
+        flex-grow: 1000;
+      }
+    }
+
+    .error {
+      background: #caa;
+      padding: .5rem;
+    }
+  }
+}

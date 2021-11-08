@@ -1,0 +1,39 @@
+
+#app .table {
+  .pager {
+
+  }
+  table {
+    font-family: monospace;
+
+    thead {
+      th {
+        .title {
+        }
+        .sort {
+          width: .7rem;
+
+          &.active {
+            background: #bae3ba;
+            border-radius: .2rem;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(2n) {
+           background: #efeded;
+        }
+        td {
+          padding: .2rem;
+
+          &.right {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

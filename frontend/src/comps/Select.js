@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from "react";
+import React, { memo, useCallback, useContext } from "react";
 
 
 const Select = ({options, value, onChange}) => {
@@ -9,7 +9,7 @@ const Select = ({options, value, onChange}) => {
             e.preventDefault();
             onChange(e.target.value);
         },
-        []
+        [onChange]
     );
     console.log("RENDER", value);
     return (
@@ -21,5 +21,5 @@ const Select = ({options, value, onChange}) => {
     );
 };
 
-export default Select;
+export default memo(Select);
 

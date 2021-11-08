@@ -6,7 +6,7 @@ export const get_objects_table = (state) => {
             && state.changelogs[state.api_type][state.api_year];
 
     if (!changelog)
-        return {columns: [], rows: []};
+        return {columns: [], full_rows: []};
 
     const rows = [];
     for (const obj_id of Object.keys(changelog)) {
@@ -16,12 +16,10 @@ export const get_objects_table = (state) => {
             changes: events.length,
         };
         rows.push(row);
-        if (rows.length > 30)
-            break;
     }
 
     return {
         columns: ["id", "changes"],
-        rows: rows,
+        full_rows: rows,
     }
 };
