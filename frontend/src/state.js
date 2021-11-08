@@ -22,8 +22,8 @@ const DEFAULT_STATE = {
 
 
 export function reducer(state, action) {
-    console.log("ACTION", action);
-    console.log("OLD STATE", state);
+    //console.log("ACTION", action);
+    //console.log("OLD STATE", state);
 
     switch (action.type) {
 

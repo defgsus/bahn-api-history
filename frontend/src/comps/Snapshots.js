@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useState } from "react";
+import React, {memo, useCallback, useEffect, useState} from "react";
 import ObjectRender from "./ObjectRender";
 
 const ChangesRender = memo(({changes}) => {
@@ -30,20 +30,25 @@ const ChangesRender = memo(({changes}) => {
 const ObjectSnapshot = memo(({snapshot, type, as_json, set_as_json}) => {
     return (
         <div>
-            {as_json
-                ? <pre>{JSON.stringify(snapshot.object, null, 2)}</pre>
-                : <ObjectRender data={snapshot.object} type={type} changes={snapshot.changes}/>
-            }
-
             <div className={"grid-x"}>
-                <div className={"grow"}>
-                    <ChangesRender changes={snapshot.changes}/>
-                </div>
+                <div className={"grow"}/>
                 <div>
                     {as_json
                         ? <button onClick={e => set_as_json(0)}>text</button>
                         : <button onClick={e => set_as_json(1)}>json</button>
                     }
+                </div>
+            </div>
+
+            {as_json
+                ? <pre>{JSON.stringify(snapshot.object, null, 2)}</pre>
+                : <ObjectRender data={snapshot.object} type={type} changes={snapshot.changes}/>
+            }
+
+            <hr/>
+            <div className={"grid-x"}>
+                <div className={"grow"}>
+                    <ChangesRender changes={snapshot.changes}/>
                 </div>
             </div>
 
@@ -76,7 +81,26 @@ const Snapshots = memo(({object_snapshots, type}) => {
     let [index, set_index] = useState(-1);
     let [as_json, set_as_json] = useState(0);
 
-    index = Math.min(index, object_snapshots.length - 1);
+    index = Math.max(-1, Math.min(index, object_snapshots.length - 1));
+
+    useEffect(() => {
+        const handler = e => {
+            let handled = false;
+            switch (e.key) {
+                case "ArrowUp": if (index > -1) { set_index(index - 1); handled = true; } break;
+                case "ArrowDown":
+                    if (index < object_snapshots.length-1) { set_index(index + 1); handled = true; }
+                    break;
+            }
+            if (handled) {
+                e.stopPropagation();
+                e.preventDefault();
+            }
+        };
+        window.addEventListener("keydown", handler);
+
+        return () => window.removeEventListener("keydown", handler);
+    }, [index, set_index, object_snapshots]);
 
     return (
         <div>

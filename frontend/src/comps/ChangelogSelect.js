@@ -18,16 +18,17 @@ const ChangelogSelect = () => {
             if (!changelogs || !changelogs[v] || !changelogs[v][api_year])
                 request("LOAD_CHANGELOG", "GET", `data/${v}/${api_year}-changelog.json`)
         },
-        [api_year, dispatch]
+        [api_year, dispatch, changelogs]
     );
 
     const updateApiYear = useCallback(
         v => {
             dispatch({type: "SET_API", payload: {type: api_type, year: v}});
-            if (!changelogs || !changelogs[api_type] || !changelogs[api_type][v])
+            if (!changelogs || !changelogs[api_type] || !changelogs[api_type][v]) {
                 request("LOAD_CHANGELOG", "GET", `data/${api_type}/${v}-changelog.json`)
+            }
         },
-        [api_type, dispatch]
+        [api_type, dispatch, changelogs]
     );
 
     return (

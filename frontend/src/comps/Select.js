@@ -1,7 +1,7 @@
-import React, { memo, useCallback, useContext } from "react";
+import React, { memo, useCallback } from "react";
 
 
-const Select = ({options, value, onChange}) => {
+const Select = memo(({options, value, onChange}) => {
 
     const updateValue = useCallback(
         e => {
@@ -11,7 +11,7 @@ const Select = ({options, value, onChange}) => {
         },
         [onChange]
     );
-    console.log("RENDER", value);
+
     return (
         <select value={value} onChange={updateValue}>
             {options.map(t => (
@@ -19,7 +19,7 @@ const Select = ({options, value, onChange}) => {
             ))}
         </select>
     );
-};
+});
 
-export default memo(Select);
+export default Select;
 

@@ -5,7 +5,7 @@ export const paginate_table = (table) => {
     table.total_count = rows.length;
 
     if (typeof table.per_page === "undefined")
-        table.per_page = 23;
+        table.per_page = 10;
 
     table.pages = Math.floor(rows.length / table.per_page);
 
