@@ -45,7 +45,14 @@ const FrontPage = () => {
     return (
         <div className={"front"}>
 
-            <ChangelogSelect/>
+            <div className={"grid-x margin-right"}>
+                <div><div className={"inline"}>DB API changelogs</div></div>
+                <div><ChangelogSelect/></div>
+                <div className={"grow"}/>
+                <div>
+                    <a href={"https://github.com/defgsus/bahn-api-history"} target={"_blank"}>github</a>
+                </div>
+            </div>
 
             {error ? <div className={"error"}>{error}</div> : null}
 

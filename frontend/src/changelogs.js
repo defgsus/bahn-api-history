@@ -1,4 +1,5 @@
-import { Map, List, fromJS } from "immutable"
+import { fromJS } from "immutable"
+
 
 const API_COLUMNS = {
     "stations": fromJS([
@@ -6,6 +7,7 @@ const API_COLUMNS = {
         {name: "changes", align: "right"},
         {name: "name"},
         {name: "first_date"},
+        {name: "last_date"},
     ]),
     "elevators": fromJS([
         {name: "id"},
@@ -13,12 +15,14 @@ const API_COLUMNS = {
         {name: "name"},
         {name: "station"},
         {name: "first_date"},
+        {name: "last_date"},
     ]),
     "parking": fromJS([
         {name: "id"},
         {name: "changes", align: "right"},
         {name: "name"},
         {name: "first_date"},
+        {name: "last_date"},
     ])
 };
 
@@ -39,6 +43,8 @@ export const get_objects_table = (state) => {
             changes: events.length,
         };
         add_object_to_row(row, events, state);
+        row.first_date = events[0].date;
+        row.last_date = events[events.length-1].date;
         rows.push(row);
     }
 
@@ -52,8 +58,6 @@ export const get_objects_table = (state) => {
 const add_object_to_row = (row, events, state) => {
     for (const snapshot of object_generator(events)) {
         const o = snapshot.object;
-        if (o && !row.first_date)
-            row.first_date = snapshot.dt;
         switch (state.api_type) {
             case "stations":
                 if (o?.name)

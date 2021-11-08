@@ -27,12 +27,53 @@ const ChangesRender = memo(({changes}) => {
     );
 });
 
-const Snapshots = ({object_snapshots, type}) => {
+const ObjectSnapshot = memo(({snapshot, type, as_json, set_as_json}) => {
+    return (
+        <div>
+            {as_json
+                ? <pre>{JSON.stringify(snapshot.object, null, 2)}</pre>
+                : <ObjectRender data={snapshot.object} type={type} changes={snapshot.changes}/>
+            }
+
+            <div className={"grid-x"}>
+                <div className={"grow"}>
+                    <ChangesRender changes={snapshot.changes}/>
+                </div>
+                <div>
+                    {as_json
+                        ? <button onClick={e => set_as_json(0)}>text</button>
+                        : <button onClick={e => set_as_json(1)}>json</button>
+                    }
+                </div>
+            </div>
+
+        </div>
+    );
+});
+
+
+const AllChanges = memo(({snapshots, type}) => {
+    return (
+        <div>
+            <ul>
+                {snapshots.map(sn => (
+                    <li key={sn.dt}>
+                        {sn.dt}
+                        <ChangesRender changes={sn.changes}/>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+});
+
+
+const Snapshots = memo(({object_snapshots, type}) => {
 
     if (!object_snapshots || !object_snapshots.length)
         return null;
 
-    let [index, set_index] = useState(0);
+    let [index, set_index] = useState(-1);
     let [as_json, set_as_json] = useState(0);
 
     index = Math.min(index, object_snapshots.length - 1);
@@ -42,6 +83,12 @@ const Snapshots = ({object_snapshots, type}) => {
             <hr/>
             <div className={"snapshots grid-x"}>
                 <div className={"timestamps"}>
+                    <div
+                        className={"timestamp clickable" + (-1 === index ? " selected" : "")}
+                        onClick={e => set_index(-1)}
+                    >
+                        all
+                    </div>
                     {object_snapshots.map((s, i) => (
                         <div
                             key={s.dt}
@@ -54,29 +101,18 @@ const Snapshots = ({object_snapshots, type}) => {
                 </div>
 
                 <div className={"snapshot grow"}>
-                    <div className={"grid-x"}>
-                        <div className={"grow"}>
-                            <ChangesRender changes={object_snapshots[index].changes}/>
-                        </div>
-                        <div>
-                            {as_json
-                                ? <button onClick={e => set_as_json(0)}>text</button>
-                                : <button onClick={e => set_as_json(1)}>json</button>
-                            }
-                        </div>
-                    </div>
-
-                    {as_json
-                        ? <pre>
-                            {JSON.stringify(object_snapshots[index].object, null, 2)}
-                        </pre>
-                        : <ObjectRender data={object_snapshots[index].object} type={type}/>
+                    {index >= 0
+                        ? <ObjectSnapshot
+                            snapshot={object_snapshots[index]} type={type}
+                            as_json={as_json} set_as_json={set_as_json}
+                        />
+                        : <AllChanges snapshots={object_snapshots} type={type}/>
                     }
                 </div>
             </div>
         </div>
     );
-};
+});
 
-export default memo(Snapshots);
+export default Snapshots;
 

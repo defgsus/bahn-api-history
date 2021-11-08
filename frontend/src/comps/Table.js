@@ -64,7 +64,7 @@ const TablePager = memo(({
         <div className={"pager grid-x margin-right margin-bottom"}>
             <div className={"grow grid-x margin-right"}>
                 <div>
-                    <input value={filter} onChange={e => set_filter(e.target.value.toLowerCase())}/>
+                    🔍 <input value={filter} onChange={e => set_filter(e.target.value.toLowerCase())}/>
                 </div>
                 <div>
                 {total_count === row_count
