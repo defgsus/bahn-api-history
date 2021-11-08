@@ -1,4 +1,4 @@
-# Deutsche Bahn API History
+# Deutsche Bahn API History 
 
 There was this [monumental talk](https://media.ccc.de/v/36c3-10652-bahnmining_-_punktlichkeit_ist_eine_zier)
 in late 2019 about the *correctness* of the punctuality statistics published by
@@ -9,7 +9,9 @@ This repo contains non of the train schedule data. Instead it has change-logs of
 [station data api](https://developer.deutschebahn.com/store/apis/info?name=StaDa-Station_Data&version=v2&provider=DBOpenData)
 and the [station facilities status api](https://developer.deutschebahn.com/store/apis/info?name=FaSta-Station_Facilities_Status&version=v2&provider=DBOpenData)
 (status of elevators and escalators), **collected since late January 2020**.
- 
+
+Everything is browsable in the [static data page](https://defgsus.github.com/bahn-api-history/).
+
 
 ## Summary
 
@@ -118,6 +120,10 @@ Each API response is a list of objects which look like:
   }
 }
 ``` 
+
+> Note that the original objects did contain a `timestamp` and `timeSegment` field.
+> There are discarded in the changelogs to minimize the amount of data.
+
 
 ### stations
 
