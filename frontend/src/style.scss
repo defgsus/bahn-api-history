@@ -43,9 +43,17 @@ body {
       &.margin-right > * {
         margin-right: .5rem;
       }
+      &.margin-bottom > * {
+        margin-bottom: .5rem;
+      }
 
       .grow {
         flex-grow: 1000;
+      }
+
+      .inline {
+        display: inline-block;
+        vertical-align: middle;
       }
     }
 

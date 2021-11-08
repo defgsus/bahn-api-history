@@ -56,11 +56,23 @@ const TableBody = memo(({columns, rows, row_click}) => {
 });
 
 
-const TablePager = memo(({total_count, page, set_page, pages, per_page, set_per_page}) => {
+const TablePager = memo(({
+    total_count, row_count, page, set_page, pages, per_page, set_per_page,
+    filter, set_filter,
+}) => {
     return (
-        <div className={"pager grid-x margin-right"}>
-            <div className={"grow"}/>
-            <div>total: {total_count}</div>
+        <div className={"pager grid-x margin-right margin-bottom"}>
+            <div className={"grow grid-x margin-right"}>
+                <div>
+                    <input value={filter} onChange={e => set_filter(e.target.value.toLowerCase())}/>
+                </div>
+                <div>
+                {total_count === row_count
+                    ? <div className={"inline"}>{total_count} objects</div>
+                    : <div className={"inline"}>{row_count} of {total_count} objects</div>
+                }
+                </div>
+            </div>
             <div>
                 page&nbsp;
                 <Number min={1} max={10000} value={page} set_value={set_page} offset={1}/>
@@ -83,6 +95,8 @@ const Table = ({
     sort_by, sort_asc,
     set_sort,
     row_click,
+    filter, set_filter,
+    total_count, row_count,
 }) => {
 
     const sort_click = useCallback(c => {
@@ -94,12 +108,16 @@ const Table = ({
 
     return (
         <div className={"table"}>
+            <hr/>
             <TablePager
-                total_count={full_rows.length}
+                total_count={total_count}
+                row_count={row_count}
                 page={page} set_page={set_page}
                 pages={pages}
                 per_page={per_page}
                 set_per_page={set_per_page}
+                filter={filter}
+                set_filter={set_filter}
             />
             <table>
                 <TableHead

@@ -14,6 +14,7 @@ const DEFAULT_STATE = {
     api_year: "2020",
     changelogs: null,
     table_loading: false,
+    table_loading_progress: 0,
     objects_table: null,
     object_snapshots: null,
 };
@@ -53,6 +54,12 @@ export function reducer(state, action) {
                 error: "Failed loading data",
             };
 
+        case "LOAD_CHANGELOG_PROGRESS":
+            return {
+                ...state,
+                table_loading_progress: action.progress.toFixed(1),
+            };
+
         case "LOAD_CHANGELOG_SUCCESS":
             state = {
                 ...state,
@@ -87,7 +94,7 @@ export function reducer(state, action) {
             return {
                 ...state,
                 object_snapshots: render_object_snapshots(
-                    action.id,
+                    `${action.id}`,
                     state.changelogs[state.api_type][state.api_year],
                 ),
             };
@@ -111,6 +118,9 @@ const StateProvider = ({children}) => {
             };
             req.onerror = e => {
                 dispatch({type: `${action_name}_FAILED`, event: e});
+            };
+            req.onprogress = e => {
+                dispatch({type: `${action_name}_PROGRESS`, progress: e.loaded / e.total * 100});
             };
             dispatch({type: `${action_name}_STARTED`, method, url});
             req.send();

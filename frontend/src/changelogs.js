@@ -1,6 +1,27 @@
 import { Map, List, fromJS } from "immutable"
 
-window.fromJS = fromJS;
+const API_COLUMNS = {
+    "stations": fromJS([
+        {name: "id"},
+        {name: "changes", align: "right"},
+        {name: "name"},
+        {name: "first_date"},
+    ]),
+    "elevators": fromJS([
+        {name: "id"},
+        {name: "changes", align: "right"},
+        {name: "name"},
+        {name: "station"},
+        {name: "first_date"},
+    ]),
+    "parking": fromJS([
+        {name: "id"},
+        {name: "changes", align: "right"},
+        {name: "name"},
+        {name: "first_date"},
+    ])
+};
+
 
 export const get_objects_table = (state) => {
     const changelog =
@@ -14,31 +35,26 @@ export const get_objects_table = (state) => {
     for (const obj_id of Object.keys(changelog)) {
         const events = changelog[obj_id];
         const row = {
-            id: obj_id,
+            id: parseInt(obj_id),
             changes: events.length,
         };
-        add_object_to_row(row, events, state.api_type);
+        add_object_to_row(row, events, state);
         rows.push(row);
     }
 
     return {
-        columns: [
-            {name: "id"},
-            {name: "changes", align: "right"},
-            {name: "name"},
-            {name: "first_date"},
-        ],
+        columns: API_COLUMNS[state.api_type].toJS(),
         full_rows: rows,
     }
 };
 
 
-const add_object_to_row = (row, events, type) => {
+const add_object_to_row = (row, events, state) => {
     for (const snapshot of object_generator(events)) {
         const o = snapshot.object;
         if (o && !row.first_date)
             row.first_date = snapshot.dt;
-        switch (type) {
+        switch (state.api_type) {
             case "stations":
                 if (o?.name)
                     row.name = o.name;
@@ -47,9 +63,11 @@ const add_object_to_row = (row, events, type) => {
                 break;
 
             case "elevators":
-                if (o?.name)
-                    row.name = o.name;
-                if (row.name)
+                if (o?.description)
+                    row.name = o.description;
+                if (o?.stationnumber)
+                    row.station = o.stationnumber;
+                if (row.name && row.station)
                     return;
                 break;
 
