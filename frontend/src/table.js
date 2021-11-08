@@ -44,11 +44,10 @@ export const paginate_table = (table) => {
     }
 
     if (table.sort_by) {
-        table.full_rows.sort((a, b) => row_compare(table, a, b))
+        rows = [...rows].sort((a, b) => row_compare(table, a, b))
     }
 
     table.row_count = rows.length;
-
     table.rows = rows.slice(table.row_start, table.row_end);
 };
 

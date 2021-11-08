@@ -6,6 +6,7 @@ function run_data_server() {
 }
 
 function run_web_server() {
+  rm -r dist/*
   yarn start || exit
 }
 
