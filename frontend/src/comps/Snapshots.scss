@@ -1,0 +1,42 @@
+
+#app {
+
+  .snapshots {
+    .timestamps {
+      overflow: scroll;
+      max-height: 1000px;
+
+      .timestamp {
+        background: #eee;
+        border-radius: .5rem;
+        margin: .1rem;
+        padding: .2rem;
+
+        &.selected {
+          background: #cde;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .snapshot {
+
+      .red { color: #600; }
+      .green { color: #060; }
+
+      .object {
+        padding: 1rem;
+
+        table {
+          margin: 0;
+          padding: 0;
+          border-collapse: collapse;
+
+          td {
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
+}

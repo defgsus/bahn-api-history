@@ -4,7 +4,6 @@
 
   }
   table {
-    font-family: monospace;
 
     thead {
       th {
@@ -23,11 +22,18 @@
 
     tbody {
       tr {
+        &:hover {
+          background: #f4f4ff;
+        }
+
         &:nth-child(2n) {
-           background: #efeded;
+          background: #efefef;
+          &:hover {
+            background: #e8e8ef;
+          }
         }
         td {
-          padding: .2rem;
+          padding: .2rem .5rem;
 
           &.right {
             text-align: right;

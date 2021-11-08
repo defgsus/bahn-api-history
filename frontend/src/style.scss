@@ -1,6 +1,10 @@
 @import "comps/Number";
+@import "comps/Snapshots";
 @import "comps/Table";
 
+body {
+  font-family: monospace;
+}
 
 #app-container {
   position: relative;
@@ -10,6 +14,14 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (max-width: 1300px) {
+      width: 90%;
+    }
+    @media (max-width: 900px) {
+      width: 98%;
+    }
+
 
     .hidden {
       display: none;
@@ -23,6 +35,10 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+
+      &.nowrap {
+        flex-wrap: nowrap;
+      }
 
       &.margin-right > * {
         margin-right: .5rem;

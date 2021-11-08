@@ -12,16 +12,16 @@ const TableHead = memo(({columns, sort_by, sort_click, sort_asc}) => {
                     <th key={i}>
                         <div
                             className={"grid-x clickable"}
-                            onClick={e => sort_click(c)}
+                            onClick={e => sort_click(c.name)}
                         >
-                            <div className={"title grow"}>{c}</div>
+                            <div className={"title grow"}>{c.name}</div>
                             <div
-                                className={"sort" + (sort_by === c ? " active" : "")}
+                                className={"sort" + (sort_by === c.name ? " active" : "")}
                             >{
                                 sort_asc
-                                    ? sort_by === c
+                                    ? sort_by === c.name
                                         ? sort_icons[1] : sort_icons[0]
-                                    : sort_by === c
+                                    : sort_by === c.name
                                         ? sort_icons[3] : sort_icons[2]
                             }</div>
                         </div>
@@ -33,14 +33,19 @@ const TableHead = memo(({columns, sort_by, sort_click, sort_asc}) => {
 });
 
 
-const TableBody = memo(({columns, rows}) => {
+const TableBody = memo(({columns, rows, row_click}) => {
+
     return (
         <tbody>
             {rows.map((row, y) => (
-                <tr key={y}>
+                <tr
+                    key={y}
+                    onClick={e => { if (row_click) row_click(row, y); }}
+                    className={"" + (row_click ? " clickable" : "")}
+                >
                     {columns.map((c, x) => (
-                        <td key={x} className={"right"}>
-                            {row[c] || "-"}
+                        <td key={x} className={"" + (c.align ? c.align : "")}>
+                            {row[c.name] || "-"}
                         </td>
                     ))}
                 </tr>
@@ -76,7 +81,8 @@ const Table = ({
     page, set_page, pages,
     per_page, set_per_page,
     sort_by, sort_asc,
-    set_sort
+    set_sort,
+    row_click,
 }) => {
 
     const sort_click = useCallback(c => {
@@ -102,7 +108,11 @@ const Table = ({
                     sort_asc={sort_asc}
                     sort_click={sort_click}
                 />
-                <TableBody columns={columns} rows={rows}/>
+                <TableBody
+                    columns={columns}
+                    rows={rows}
+                    row_click={row_click}
+                />
             </table>
         </div>
     );
