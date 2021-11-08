@@ -29,6 +29,10 @@ def parse_args():
         "--readme", type=bool, nargs="?", default=False, const=True,
         help="Render new README.md",
     )
+    parser.add_argument(
+        "--website", type=bool, nargs="?", default=False, const=True,
+        help="Publish the frontend/ website to docs/",
+    )
 
     return parser.parse_args()
 
@@ -63,6 +67,9 @@ def main(args):
 
     if args.readme:
         render_readme()
+
+    if args.website:
+        publish_website()
 
 
 if __name__ == "__main__":

@@ -5,4 +5,7 @@ rm -r dist/*
 yarn build || exit
 
 rm ../docs/index*.*
-cp dist/index*.* ../docs/
+rm ../docs/js/*.*
+cp dist/index.html ../docs/
+cp dist/index*.js ../docs/js/
+cp dist/index*.css ../docs/js/
