@@ -1,6 +1,8 @@
 #!/bin/bash
 
 cd ../frontend || exit
-rm ../docs/*.js
-rm ../docs/*.css
-yarn build
+rm -r dist/*
+yarn build || exit
+
+rm ../docs/index*.*
+cp dist/index*.* ../docs/
