@@ -7,13 +7,6 @@ export const paginate_table = (table) => {
     if (typeof table.per_page === "undefined")
         table.per_page = 10;
 
-    table.pages = Math.floor(rows.length / table.per_page);
-
-    if (typeof table.page === "undefined")
-        table.page = 0;
-    else
-        table.page = Math.min(table.page, table.pages);
-
     if (typeof table.sort_by === "undefined")
         table.sort_by = "id";
     if (typeof table.sort_asc === "undefined")
@@ -21,9 +14,6 @@ export const paginate_table = (table) => {
 
     if (typeof table.filter === "undefined")
         table.filter = "";
-
-    table.row_start = table.page * table.per_page;
-    table.row_end = Math.min(rows.length, (table.page + 1) * table.per_page);
 
     if (table.filter?.length) {
         const filter_n = parseInt(table.filter);
@@ -48,6 +38,15 @@ export const paginate_table = (table) => {
     }
 
     table.row_count = rows.length;
+    table.pages = Math.floor(rows.length / table.per_page);
+
+    if (typeof table.page === "undefined")
+        table.page = 0;
+    else
+        table.page = Math.min(table.page, table.pages);
+
+    table.row_start = table.page * table.per_page;
+    table.row_end = Math.min(rows.length, (table.page + 1) * table.per_page);
     table.rows = rows.slice(table.row_start, table.row_end);
 };
 
