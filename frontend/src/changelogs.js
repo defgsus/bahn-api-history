@@ -103,6 +103,10 @@ export function* object_generator(events) {
             cur_object = fromJS(cl.init);
         }
 
+        if (cl.not_listed) {
+            cur_object = null;
+        }
+
         if (cl.changes) {
             for (const change_key of Object.keys(cl.changes)) {
                 for (const change of cl.changes[change_key]) {
@@ -136,6 +140,8 @@ export function* object_generator(events) {
         yield {
             dt: dt.replace("T", " "),
             object: cur_object && cur_object.toJS(),
+            init: !!cl.init,
+            not_listed: !!cl.not_listed,
             changes: cl.changes,
         };
     }

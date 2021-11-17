@@ -2,21 +2,22 @@
 #app {
 
   .snapshots {
+
+    .timestamp {
+      background: #eee;
+      border-radius: .5rem;
+      margin: .1rem;
+      padding: .2rem;
+
+      &.selected {
+        background: #cde;
+        font-weight: bold;
+      }
+    }
+
     .timestamps {
       overflow: scroll;
       max-height: 1000px;
-
-      .timestamp {
-        background: #eee;
-        border-radius: .5rem;
-        margin: .1rem;
-        padding: .2rem;
-
-        &.selected {
-          background: #cde;
-          font-weight: bold;
-        }
-      }
     }
 
     .snapshot {

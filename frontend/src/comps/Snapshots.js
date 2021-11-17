@@ -1,25 +1,45 @@
 import React, {memo, useCallback, useEffect, useState} from "react";
 import ObjectRender from "./ObjectRender";
 
-const ChangesRender = memo(({changes}) => {
-    if (!changes)
-        return null;
-
+const ChangesRender = memo(({snapshot}) => {
     const elems = [];
-    let i = 0;
-    for (const change_key of Object.keys(changes)) {
-        for (const change of changes[change_key]) {
-            const path = change.path;
-            elems.push(
-                <li
-                    key={++i}
-                    className={change_key === "add" ? "green" : change_key === "remove" ? "red" : ""}
-                >
-                    {change_key} {path}
-                </li>
-            );
+
+    if (snapshot.init) {
+        elems.push(
+            <li key={"init"} className={"green"}>
+                initialize
+            </li>
+        );
+    }
+
+    if (snapshot.not_listed) {
+        elems.push(
+            <li key={"not-listed"} className={"red"}>
+                not listed
+            </li>
+        );
+    }
+
+    if (snapshot.changes) {
+        let i = 0;
+        for (const change_key of Object.keys(snapshot.changes)) {
+            for (const change of snapshot.changes[change_key]) {
+                const path = change.path;
+                elems.push(
+                    <li
+                        key={++i}
+                        className={change_key === "add" ? "green" : change_key === "remove" ? "red" : ""}
+                    >
+                        {change_key} {path}
+                    </li>
+                );
+            }
         }
     }
+
+    if (!elems.length)
+        return null;
+
     return (
         <ul>
             {elems}
@@ -31,6 +51,9 @@ const ObjectSnapshot = memo(({snapshot, type, as_json, set_as_json}) => {
     return (
         <div>
             <div className={"grid-x"}>
+                <div>
+                    <b>{snapshot.dt}:</b>
+                </div>
                 <div className={"grow"}/>
                 <div>
                     {as_json
@@ -48,7 +71,7 @@ const ObjectSnapshot = memo(({snapshot, type, as_json, set_as_json}) => {
             <hr/>
             <div className={"grid-x"}>
                 <div className={"grow"}>
-                    <ChangesRender changes={snapshot.changes}/>
+                    <ChangesRender snapshot={snapshot}/>
                 </div>
             </div>
 
@@ -57,14 +80,19 @@ const ObjectSnapshot = memo(({snapshot, type, as_json, set_as_json}) => {
 });
 
 
-const AllChanges = memo(({snapshots, type}) => {
+const AllChanges = memo(({snapshots, type, index, set_index}) => {
     return (
         <div>
             <ul>
-                {snapshots.map(sn => (
+                {snapshots.map((sn, i) => (
                     <li key={sn.dt}>
-                        {sn.dt}
-                        <ChangesRender changes={sn.changes}/>
+                        <div
+                            className={"timestamp clickable" + (i === index ? " selected" : "")}
+                            onClick={e => set_index(i)}
+                        >
+                            {sn.dt}
+                        </div>
+                        <ChangesRender snapshot={sn}/>
                     </li>
                 ))}
             </ul>
@@ -87,7 +115,9 @@ const Snapshots = memo(({object_snapshots, type}) => {
         const handler = e => {
             let handled = false;
             switch (e.key) {
-                case "ArrowUp": if (index > -1) { set_index(index - 1); handled = true; } break;
+                case "ArrowUp":
+                    if (index > -1) { set_index(index - 1); handled = true; }
+                    break;
                 case "ArrowDown":
                     if (index < object_snapshots.length-1) { set_index(index + 1); handled = true; }
                     break;
@@ -130,7 +160,12 @@ const Snapshots = memo(({object_snapshots, type}) => {
                             snapshot={object_snapshots[index]} type={type}
                             as_json={as_json} set_as_json={set_as_json}
                         />
-                        : <AllChanges snapshots={object_snapshots} type={type}/>
+                        : <AllChanges
+                            snapshots={object_snapshots}
+                            type={type}
+                            index={index}
+                            set_index={set_index}
+                        />
                     }
                 </div>
             </div>

@@ -5,11 +5,18 @@ import FrontPage from "./FrontPage";
 
 const App = () => {
 
-    return (
-        <StateProvider>
-            <FrontPage/>
-        </StateProvider>
-    );
+    try {
+        return (
+            <StateProvider>
+                <FrontPage/>
+            </StateProvider>
+        );
+    }
+    catch (e) {
+        return (
+            <div className={"error"}>{`${e}`}</div>
+        );
+    }
 };
 
 export default App;

@@ -146,7 +146,7 @@ const NestedRender = memo(({name, type, data, path, changed_paths}) => {
 const ObjectRender = memo(({data, type, changes}) => {
 
     if (!data)
-        return null;
+        return <div>null</div>;
 
     const changed_paths = [];
     if (changes) {
@@ -160,9 +160,6 @@ const ObjectRender = memo(({data, type, changes}) => {
     return (
         <div className={"object"}>
             <NestedRender type={type} data={data} path={""} changed_paths={changed_paths}/>
-            {/*<pre>
-                {JSON.stringify(data, null, 2)}
-            </pre>*/}
         </div>
     );
 });
