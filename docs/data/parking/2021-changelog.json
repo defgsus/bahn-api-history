@@ -8155,7 +8155,23 @@
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2021-12-24T20:00:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2021-12-24T20:15:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2021-12-24T22:15:01"},
-    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2021-12-24T22:30:01"}
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2021-12-24T22:30:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2021-12-25T11:00:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2021-12-25T11:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2021-12-25T12:45:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2021-12-25T13:00:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2021-12-25T14:45:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2021-12-25T15:00:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2021-12-25T16:00:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2021-12-25T16:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2021-12-25T17:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2021-12-25T17:30:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2021-12-25T18:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2021-12-25T18:30:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2021-12-25T20:30:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2021-12-25T20:45:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2021-12-25T21:45:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2021-12-25T22:00:01"}
   ],
   "100058": [
     {"date": "2021-01-01T00:00:01", "init": {"allocation": {"capacity": 1085, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100058, "label": "P3", "name": "Parkhaus D\u00fcsseldorf Hauptbahnhof", "nameDisplay": "D\u00fcsseldorf Hbf P3 Parkhaus", "station": {"id": 1401, "name": "D\u00fcsseldorf Hbf"}, "title": "D\u00fcsseldorf Hbf P3 D\u00fcsseldorf Hbf P3 Parkhaus"}}},
@@ -8868,7 +8884,9 @@
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 305}]}, "date": "2021-12-23T05:15:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 265}]}, "date": "2021-12-23T08:45:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 315}]}, "date": "2021-12-24T05:15:01"},
-    {"changes": {"replace": [{"path": "allocation.capacity", "value": 275}]}, "date": "2021-12-24T08:45:01"}
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 275}]}, "date": "2021-12-24T08:45:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 375}]}, "date": "2021-12-25T05:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 355}]}, "date": "2021-12-25T08:15:01"}
   ],
   "100073": [
     {"date": "2021-01-01T00:00:01", "init": {"allocation": {"capacity": 305, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100073, "label": "P1", "name": "Parkhaus Essen Hauptbahnhof", "nameDisplay": "Essen Hbf P1 Parkhaus", "station": {"id": 1690, "name": "Essen Hbf"}, "title": "Essen Hbf P1 Essen Hbf P1 Parkhaus"}}},
@@ -11245,7 +11263,17 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2021-12-24T12:00:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-24T12:45:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2021-12-24T13:30:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-24T13:45:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-24T13:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2021-12-25T09:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-25T10:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2021-12-25T10:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-25T10:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2021-12-25T12:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-25T13:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2021-12-25T15:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-25T15:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2021-12-25T16:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-25T16:15:01"}
   ],
   "100084": [
     {"date": "2021-01-01T00:00:01", "init": {"allocation": {"capacity": 40, "category": 3, "text": "> 30", "validData": true}, "space": {"id": 100084, "label": "P4", "name": "Frankfurt (Main) Hbf Bustasche", "nameDisplay": "Frankfurt (Main) Hbf P4 Bustasche", "station": {"id": 1866, "name": "Frankfurt (Main) Hbf"}, "title": "Frankfurt (Main) Hbf P4 Frankfurt (Main) Hbf P4 Bustasche"}}},
@@ -13650,7 +13678,14 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-24T21:45:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-24T22:00:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-24T23:30:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-25T00:00:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-25T00:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-25T07:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2021-12-25T10:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-25T11:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2021-12-25T13:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-25T13:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2021-12-25T18:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2021-12-25T18:30:01"}
   ],
   "100090": [
     {"date": "2021-01-01T00:00:01", "init": {"allocation": {"capacity": 198, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100090, "label": "P4", "name": "Tiefgarage am Bahnhof", "nameDisplay": "Freiburg (Breisgau) Hbf P4 Tiefgarage am Bahnhof", "station": {"id": 1893, "name": "Freiburg (Breisgau) Hbf"}, "title": "Freiburg (Breisgau) Hbf P4 Freiburg (Breisgau) Hbf P4 Tiefgarage am Bahnhof"}}},
@@ -20874,7 +20909,9 @@
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 102}]}, "date": "2021-12-23T06:15:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 134}]}, "date": "2021-12-23T19:15:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 102}]}, "date": "2021-12-24T06:15:01"},
-    {"changes": {"replace": [{"path": "allocation.capacity", "value": 134}]}, "date": "2021-12-24T19:15:01"}
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 134}]}, "date": "2021-12-24T19:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 140}]}, "date": "2021-12-25T06:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 144}]}, "date": "2021-12-25T14:15:01"}
   ],
   "100280": [
     {"date": "2021-01-01T00:00:01", "init": {"allocation": {"capacity": 42, "category": 3, "text": "> 30", "validData": true}, "space": {"id": 100280, "label": "P3", "name": "Parkhaus Wilhelmsplatz Ebenen -3 und -2", "nameDisplay": "Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2", "station": {"id": 6077, "name": "Stuttgart-Bad Cannstatt"}, "title": "Stuttgart-Bad Cannstatt P3 Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2"}}},
@@ -22324,7 +22361,21 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-24T23:00:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-24T23:15:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-24T23:30:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-24T23:45:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-24T23:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-25T06:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-25T11:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-25T11:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-25T12:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-25T12:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-25T13:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-25T14:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-25T14:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-25T14:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-25T14:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-25T15:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-25T15:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-25T17:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-25T18:30:01"}
   ],
   "100291": [
     {"date": "2021-01-01T00:00:01", "init": {"allocation": {"capacity": 133, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100291, "label": "P2", "name": "Parkplatz Ulm Hauptbahnhof", "nameDisplay": "Ulm Hbf P2 Parkplatz", "station": {"id": 6323, "name": "Ulm Hbf"}, "title": "Ulm Hbf P2 Ulm Hbf P2 Parkplatz"}}},
@@ -23104,7 +23155,9 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-23T15:30:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 133}]}, "date": "2021-12-23T16:15:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 103}]}, "date": "2021-12-24T05:15:01"},
-    {"changes": {"replace": [{"path": "allocation.capacity", "value": 138}]}, "date": "2021-12-24T16:15:01"}
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 138}]}, "date": "2021-12-24T16:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 108}]}, "date": "2021-12-25T04:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 143}]}, "date": "2021-12-25T15:15:01"}
   ],
   "100308": [
     {"date": "2021-01-01T00:00:01", "init": {"allocation": {"capacity": 108, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100308, "label": "P1", "name": "Parkdeck Wolfsburg Hauptbahnhof", "nameDisplay": "Wolfsburg Hbf P1 Parkdeck", "station": {"id": 6859, "name": "Wolfsburg Hbf"}, "title": "Wolfsburg Hbf P1 Wolfsburg Hbf P1 Parkdeck"}}},
@@ -23964,7 +24017,9 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-23T16:30:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-23T17:15:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2021-12-23T17:45:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-23T22:15:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2021-12-23T22:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 94}]}, "date": "2021-12-25T03:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 110}]}, "date": "2021-12-25T23:15:01"}
   ],
   "103086": [
     {"date": "2021-01-01T00:00:01", "init": {"allocation": {"capacity": 193, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 103086, "label": "P1", "name": "Tiefgarage Viktoria-Passage / Hauptbahnhof", "nameDisplay": "Augsburg Hbf P1 Tiefgarage Viktoria-Passage", "station": {"id": 220, "name": "Augsburg Hbf"}, "title": "Augsburg Hbf P1 Augsburg Hbf P1 Tiefgarage Viktoria-Passage"}}},
