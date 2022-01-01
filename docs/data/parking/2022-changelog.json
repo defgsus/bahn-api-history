@@ -1,0 +1,152 @@
+{
+  "100006": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 405, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100006, "label": "P1", "name": "Parkhaus Aschaffenburg Hauptbahnhof", "nameDisplay": "Parkhaus Aschaffenburg Hauptbahnhof", "station": {"id": 187, "name": "Aschaffenburg Hbf"}, "title": "Aschaffenburg Hbf P1 Parkhaus Aschaffenburg Hauptbahnhof"}}}
+  ],
+  "100022": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 639, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100022, "label": "P1", "name": "Parkhaus Berlin Hauptbahnhof", "nameDisplay": "Parkhaus Berlin Hauptbahnhof", "station": {"id": 1071, "name": "Berlin Hauptbahnhof"}, "title": "Berlin Hauptbahnhof P1 Parkhaus Berlin Hauptbahnhof"}}}
+  ],
+  "100023": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 90, "category": 3, "text": "> 30", "validData": true}, "space": {"id": 100023, "label": "P1", "name": "Parkplatz Berlin Ostbahnhof", "nameDisplay": "Parkplatz Berlin Ostbahnhof", "station": {"id": 530, "name": "Berlin Ostbahnhof"}, "title": "Berlin Ostbahnhof P1 Parkplatz Berlin Ostbahnhof"}}}
+  ],
+  "100024": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 170, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100024, "label": "P2", "name": "Tiefgarage Berlin Ostbahnhof", "nameDisplay": "Tiefgarage Berlin Ostbahnhof", "station": {"id": 530, "name": "Berlin Ostbahnhof"}, "title": "Berlin Ostbahnhof P2 Tiefgarage Berlin Ostbahnhof"}}}
+  ],
+  "100025": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 175, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100025, "label": "P1", "name": "Parkhaus Bahnhof Berlin S\u00fcdkreuz", "nameDisplay": "Parkhaus Bahnhof Berlin S\u00fcdkreuz", "station": {"id": 4859, "name": "Berlin S\u00fcdkreuz"}, "title": "Berlin S\u00fcdkreuz P1 Parkhaus Bahnhof Berlin S\u00fcdkreuz"}}}
+  ],
+  "100031": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 582, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100031, "label": "P1", "name": "Parkhaus Stuttgarter Stra\u00dfe S\u00fcd", "nameDisplay": "Bahnhof Bietigheim-Bissingen Parkhaus S\u00fcd", "station": {"id": 636, "name": "Bietigheim-Bissingen"}, "title": "Bietigheim-Bissingen P1 Bahnhof Bietigheim-Bissingen Parkhaus S\u00fcd"}}}
+  ],
+  "100040": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 155, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100040, "label": "P1", "name": "Parkplatz Hauptbahnhof Nord", "nameDisplay": "Braunschweig Hbf Parkplatz Nord", "station": {"id": 835, "name": "Braunschweig Hbf"}, "title": "Braunschweig Hbf P1 Braunschweig Hbf Parkplatz Nord"}}}
+  ],
+  "100043": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 226, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100043, "label": "P1", "name": "Hochgarage am Bahnhof", "nameDisplay": "Bremen Hbf Hochgarage am Bahnhof", "station": {"id": 855, "name": "Bremen Hbf"}, "title": "Bremen Hbf P1 Bremen Hbf Hochgarage am Bahnhof"}}}
+  ],
+  "100050": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 54, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100050, "label": "P1", "name": "Parkplatz Bahnhof Coburg Vorderseite", "nameDisplay": "Parkplatz Bahnhof Coburg Lossaustra\u00dfe", "station": {"id": 1059, "name": "Coburg"}, "title": "Coburg P1 Parkplatz Bahnhof Coburg Lossaustra\u00dfe"}}}
+  ],
+  "100054": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 197, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100054, "label": "P1", "name": "Parkplatz Bahnhof D\u00fcren Ludwig-Erhard-Platz", "nameDisplay": "Parkplatz Bahnhof D\u00fcren Ludwig-Erhard-Platz", "station": {"id": 1392, "name": "D\u00fcren"}, "title": "D\u00fcren P1 Parkplatz Bahnhof D\u00fcren Ludwig-Erhard-Platz"}}}
+  ],
+  "100058": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 1085, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100058, "label": "P3", "name": "Parkhaus D\u00fcsseldorf Hauptbahnhof", "nameDisplay": "Parkhaus D\u00fcsseldorf Hauptbahnhof", "station": {"id": 1401, "name": "D\u00fcsseldorf Hbf"}, "title": "D\u00fcsseldorf Hbf P3 Parkhaus D\u00fcsseldorf Hauptbahnhof"}}}
+  ],
+  "100066": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 275, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100066, "label": "P2", "name": "Parkhaus Duisburg Hbf / UCI", "nameDisplay": "Parkhaus Duisburg Hbf / UCI", "station": {"id": 1374, "name": "Duisburg Hbf"}, "title": "Duisburg Hbf P2 Parkhaus Duisburg Hbf / UCI"}}}
+  ],
+  "100073": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 305, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100073, "label": "P1", "name": "Parkhaus Essen Hauptbahnhof", "nameDisplay": "Parkhaus Essen Hauptbahnhof", "station": {"id": 1690, "name": "Essen Hbf"}, "title": "Essen Hbf P1 Parkhaus Essen Hauptbahnhof"}}}
+  ],
+  "100081": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 350, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100081, "label": "P1", "name": "Tiefgarage Hauptbahnhof Nord", "nameDisplay": "Frankfurt (Main) Tiefgarage Hbf Nord", "station": {"id": 1866, "name": "Frankfurt (Main) Hbf"}, "title": "Frankfurt (Main) Hbf P1 Frankfurt (Main) Tiefgarage Hbf Nord"}}}
+  ],
+  "100082": [
+    {"date": "2022-01-01T00:00:01", "not_listed": true}
+  ],
+  "100083": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 17, "category": 2, "text": "> 10", "validData": true}, "space": {"id": 100083, "label": "P3", "name": "Hauptbahnhof Vorfahrt II", "nameDisplay": "Frankfurt (Main) Hbf Vorfahrt II", "station": {"id": 1866, "name": "Frankfurt (Main) Hbf"}, "title": "Frankfurt (Main) Hbf P3 Frankfurt (Main) Hbf Vorfahrt II"}}}
+  ],
+  "100084": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 60, "category": 3, "text": "> 30", "validData": true}, "space": {"id": 100084, "label": "P4", "name": "Frankfurt (Main) Hbf Bustasche", "nameDisplay": "Frankfurt (Main) Hbf Bustasche", "station": {"id": 1866, "name": "Frankfurt (Main) Hbf"}, "title": "Frankfurt (Main) Hbf P4 Frankfurt (Main) Hbf Bustasche"}}}
+  ],
+  "100090": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 158, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100090, "label": "P4", "name": "Tiefgarage am Bahnhof", "nameDisplay": "Freiburg (Breisgau) Hbf Tiefgarage am Bahnhof", "station": {"id": 1893, "name": "Freiburg (Breisgau) Hbf"}, "title": "Freiburg (Breisgau) Hbf P4 Freiburg (Breisgau) Hbf Tiefgarage am Bahnhof"}}}
+  ],
+  "100102": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 101, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100102, "label": "P1", "name": "Parkplatz Bahnhof G\u00f6ttingen Bahnhofsallee", "nameDisplay": "Parkplatz Bahnhof G\u00f6ttingen Bahnhofsallee", "station": {"id": 2218, "name": "G\u00f6ttingen"}, "title": "G\u00f6ttingen P1 Parkplatz Bahnhof G\u00f6ttingen Bahnhofsallee"}}}
+  ],
+  "100103": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 305, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100103, "label": "P2", "name": "Parkhaus Bahnhof G\u00f6ttingen", "nameDisplay": "Parkhaus Bahnhof G\u00f6ttingen", "station": {"id": 2218, "name": "G\u00f6ttingen"}, "title": "G\u00f6ttingen P2 Parkhaus Bahnhof G\u00f6ttingen"}}}
+  ],
+  "100111": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 244, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100111, "label": "P4", "name": "Parkhaus am Bahnhof", "nameDisplay": "Parkhaus am Bahnhof Gie\u00dfen", "station": {"id": 2120, "name": "Gie\u00dfen"}, "title": "Gie\u00dfen P4 Parkhaus am Bahnhof Gie\u00dfen"}}}
+  ],
+  "100114": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 360, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100114, "label": "P3", "name": "Tiefgarage Charlottencenter", "nameDisplay": "Tiefgarage Charlottencenter", "station": {"id": 2498, "name": "Halle (Saale) Hbf"}, "title": "Halle (Saale) Hbf P3 Tiefgarage Charlottencenter"}}}
+  ],
+  "100115": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 387, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100115, "label": "P1", "name": "Parkhaus Hauptbahnhof Centrum H\u00fchnerposten", "nameDisplay": "Parkhaus Hauptbahnhof Centrum H\u00fchnerposten", "station": {"id": 2514, "name": "Hamburg Hbf"}, "title": "Hamburg Hbf P1 Parkhaus Hauptbahnhof Centrum H\u00fchnerposten"}}}
+  ],
+  "100130": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 128, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100130, "label": "P7", "name": "Tiefgarage Hauptbahnhof Augustenstra\u00dfe", "nameDisplay": "Tiefgarage Hauptbahnhof Augustenstra\u00dfe", "station": {"id": 2545, "name": "Hannover Hbf"}, "title": "Hannover Hbf P7 Tiefgarage Hauptbahnhof Augustenstra\u00dfe"}}}
+  ],
+  "100158": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 249, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100158, "label": "P2", "name": "Park+Ride-Parkhaus Hauptbahnhof", "nameDisplay": "Park+Ride-Parkhaus Kaiserslautern Hbf", "station": {"id": 3082, "name": "Kaiserslautern Hbf"}, "title": "Kaiserslautern Hbf P2 Park+Ride-Parkhaus Kaiserslautern Hbf"}}}
+  ],
+  "100169": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 26, "category": 2, "text": "> 10", "validData": true}, "space": {"id": 100169, "label": "P1", "name": "Parkplatz Bahnhof Kassel-Wilhelmsh\u00f6he", "nameDisplay": "Parkplatz Bahnhof Kassel-Wilhelmsh\u00f6he", "station": {"id": 3127, "name": "Kassel-Wilhelmsh\u00f6he"}, "title": "Kassel-Wilhelmsh\u00f6he P1 Parkplatz Bahnhof Kassel-Wilhelmsh\u00f6he"}}}
+  ],
+  "100170": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 340, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100170, "label": "P2", "name": "Parkdeck Bahnhof Kassel-Wilhelmsh\u00f6he", "nameDisplay": "Parkdeck Bahnhof Kassel-Wilhelmsh\u00f6he", "station": {"id": 3127, "name": "Kassel-Wilhelmsh\u00f6he"}, "title": "Kassel-Wilhelmsh\u00f6he P2 Parkdeck Bahnhof Kassel-Wilhelmsh\u00f6he"}}}
+  ],
+  "100196": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 231, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100196, "label": "P1", "name": "Tiefgarage Magdeburg City Carr\u00e9 / Hbf", "nameDisplay": "Tiefgarage Magdeburg City Carr\u00e9 / Hbf", "station": {"id": 3881, "name": "Magdeburg Hbf"}, "title": "Magdeburg Hbf P1 Tiefgarage Magdeburg City Carr\u00e9 / Hbf"}}}
+  ],
+  "100197": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 804, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100197, "label": "P2", "name": "Tiefgarage Magdeburg City Carr\u00e9 / Hbf - Tiefpreisparken", "nameDisplay": "Tiefgarage Magdeburg City Carr\u00e9 / Hbf - Tiefpreisparken", "station": {"id": 3881, "name": "Magdeburg Hbf"}, "title": "Magdeburg Hbf P2 Tiefgarage Magdeburg City Carr\u00e9 / Hbf - Tiefpreisparken"}}}
+  ],
+  "100201": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 28, "category": 2, "text": "> 10", "validData": true}, "space": {"id": 100201, "label": "P3", "name": "Tiefgarage Bonifazius-T\u00fcrme UG -1", "nameDisplay": "Mainz Hbf Tiefgarage Bonifazius-T\u00fcrme UG -1", "station": {"id": 3898, "name": "Mainz Hbf"}, "title": "Mainz Hbf P3 Mainz Hbf Tiefgarage Bonifazius-T\u00fcrme UG -1"}}}
+  ],
+  "100202": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 160, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100202, "label": "P4", "name": "Tiefgarage Bonifazius-T\u00fcrme UG -2", "nameDisplay": "Mainz Hbf Tiefgarage Bonifazius-T\u00fcrme UG -2", "station": {"id": 3898, "name": "Mainz Hbf"}, "title": "Mainz Hbf P4 Mainz Hbf Tiefgarage Bonifazius-T\u00fcrme UG -2"}}}
+  ],
+  "100213": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 200, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100213, "label": "P4", "name": "Tiefgarage M\u00fcnchen Hauptbahnhof S\u00fcd", "nameDisplay": "Tiefgarage M\u00fcnchen Hauptbahnhof S\u00fcd", "station": {"id": 4234, "name": "M\u00fcnchen Hbf"}, "title": "M\u00fcnchen Hbf P4 Tiefgarage M\u00fcnchen Hauptbahnhof S\u00fcd"}}}
+  ],
+  "100240": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 374, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100240, "label": "P4", "name": "Parkhaus Donaupassage", "nameDisplay": "Passau Hbf Parkhaus Donaupassage", "station": {"id": 4872, "name": "Passau Hbf"}, "title": "Passau Hbf P4 Passau Hbf Parkhaus Donaupassage"}}}
+  ],
+  "100242": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 268, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100242, "label": "P1", "name": "Parkhaus Bahnhof Plochingen", "nameDisplay": "Parkhaus Bahnhof Plochingen", "station": {"id": 4967, "name": "Plochingen"}, "title": "Plochingen P1 Parkhaus Bahnhof Plochingen"}}}
+  ],
+  "100252": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 72, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100252, "label": "P5", "name": "Tiefgarage Hauptbahnhof / Castra Regina Center", "nameDisplay": "Tiefgarage Hauptbahnhof / Castra Regina Center", "station": {"id": 5169, "name": "Regensburg Hbf"}, "title": "Regensburg Hbf P5 Tiefgarage Hauptbahnhof / Castra Regina Center"}}}
+  ],
+  "100275": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 870, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100275, "label": "P1", "name": "Stuttgart Hbf Tiefgarage LBBW", "nameDisplay": "Stuttgart Hbf Tiefgarage LBBW", "station": {"id": 6071, "name": "Stuttgart Hbf"}, "title": "Stuttgart Hbf P1 Stuttgart Hbf Tiefgarage LBBW"}}}
+  ],
+  "100278": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 141, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100278, "label": "P1", "name": "Parkhaus Wilhelmsplatz Ebenen 7 bis 12", "nameDisplay": "Bad Cannstatt Parkhaus Wilhelmsplatz Ebenen 7 bis 12", "station": {"id": 6077, "name": "Stuttgart-Bad Cannstatt"}, "title": "Stuttgart-Bad Cannstatt P1 Bad Cannstatt Parkhaus Wilhelmsplatz Ebenen 7 bis 12"}}}
+  ],
+  "100279": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 134, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100279, "label": "P2", "name": "Parkhaus Wilhelmsplatz Ebenen -1 bis 6", "nameDisplay": "Bad Cannstatt Parkhaus Wilhelmsplatz Ebenen -1 bis 6", "station": {"id": 6077, "name": "Stuttgart-Bad Cannstatt"}, "title": "Stuttgart-Bad Cannstatt P2 Bad Cannstatt Parkhaus Wilhelmsplatz Ebenen -1 bis 6"}}}
+  ],
+  "100280": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 43, "category": 3, "text": "> 30", "validData": true}, "space": {"id": 100280, "label": "P3", "name": "Parkhaus Wilhelmsplatz Ebenen -3 und -2", "nameDisplay": "Bad Cannstatt Parkhaus Wilhelmsplatz Ebenen -3 und -2", "station": {"id": 6077, "name": "Stuttgart-Bad Cannstatt"}, "title": "Stuttgart-Bad Cannstatt P3 Bad Cannstatt Parkhaus Wilhelmsplatz Ebenen -3 und -2"}}}
+  ],
+  "100281": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 68, "category": 3, "text": "> 30", "validData": true}, "space": {"id": 100281, "label": "P1", "name": "Parkplatz Bahnhof Stuttgart-Vaihingen", "nameDisplay": "Parkplatz Bahnhof Stuttgart-Vaihingen", "station": {"id": 6087, "name": "Stuttgart-Vaihingen"}, "title": "Stuttgart-Vaihingen P1 Parkplatz Bahnhof Stuttgart-Vaihingen"}}}
+  ],
+  "100291": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 138, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100291, "label": "P2", "name": "Parkplatz Ulm Hauptbahnhof", "nameDisplay": "Parkplatz Ulm Hauptbahnhof", "station": {"id": 6323, "name": "Ulm Hbf"}, "title": "Ulm Hbf P2 Parkplatz Ulm Hauptbahnhof"}}}
+  ],
+  "100308": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 108, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100308, "label": "P1", "name": "Parkdeck Wolfsburg Hauptbahnhof", "nameDisplay": "Parkdeck Wolfsburg Hauptbahnhof", "station": {"id": 6859, "name": "Wolfsburg Hbf"}, "title": "Wolfsburg Hbf P1 Parkdeck Wolfsburg Hauptbahnhof"}}}
+  ],
+  "100309": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 72, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100309, "label": "P2", "name": "Tiefgarage Wolfsburg Hauptbahnhof / Kino", "nameDisplay": "Tiefgarage Wolfsburg Hauptbahnhof / Kino", "station": {"id": 6859, "name": "Wolfsburg Hbf"}, "title": "Wolfsburg Hbf P2 Tiefgarage Wolfsburg Hauptbahnhof / Kino"}}}
+  ],
+  "103086": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 193, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 103086, "label": "P1", "name": "Tiefgarage Viktoria-Passage / Hauptbahnhof", "nameDisplay": "Augsburg Tiefgarage Viktoria-Passage / Hbf", "station": {"id": 220, "name": "Augsburg Hbf"}, "title": "Augsburg Hbf P1 Augsburg Tiefgarage Viktoria-Passage / Hbf"}}}
+  ],
+  "103104": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 354, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 103104, "label": "P3", "name": "Parkhaus Duisburg Hbf / Duisburger Freiheit", "nameDisplay": "Parkhaus Duisburg Hbf / Duisburger Freiheit", "station": {"id": 1374, "name": "Duisburg Hbf"}, "title": "Duisburg Hbf P3 Parkhaus Duisburg Hbf / Duisburger Freiheit"}}}
+  ],
+  "103119": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 64, "category": 1, "text": "bis 10", "validData": true}, "space": {"id": 103119, "label": "P2", "name": "Parkplatz Bahnhof Coburg R\u00fcckseite", "nameDisplay": "Parkplatz Bahnhof Coburg Adamistra\u00dfe", "station": {"id": 1059, "name": "Coburg"}, "title": "Coburg P2 Parkplatz Bahnhof Coburg Adamistra\u00dfe"}}}
+  ],
+  "103129": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 387, "validData": true}, "space": {"id": 103129, "label": "P1", "name": "Parkplatz Bahnhof Geltendorf Vorderseite Nord", "nameDisplay": "Parkplatz Bahnhof Geltendorf Vorderseite Nord", "station": {"id": 2058, "name": "Geltendorf"}, "title": "Geltendorf P1 Parkplatz Bahnhof Geltendorf Vorderseite Nord"}}}
+  ],
+  "103130": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 80, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 103130, "label": "P6", "name": "Tiefgarage Hauptbahnhof S\u00fcd / Karlsruher Stra\u00dfe", "nameDisplay": "Frankfurt (Main) Tiefgarage Hbf S\u00fcd / Karlsruher Stra\u00dfe", "station": {"id": 1866, "name": "Frankfurt (Main) Hbf"}, "title": "Frankfurt (Main) Hbf P6 Frankfurt (Main) Tiefgarage Hbf S\u00fcd / Karlsruher Stra\u00dfe"}}}
+  ],
+  "103238": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 216, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 103238, "label": "P2", "name": "Parkhaus Bahnhof Gie\u00dfen Lahnstra\u00dfe P2", "nameDisplay": "Parkhaus Bahnhof Gie\u00dfen Lahnstra\u00dfe P2", "station": {"id": 2120, "name": "Gie\u00dfen"}, "title": "Gie\u00dfen P2 Parkhaus Bahnhof Gie\u00dfen Lahnstra\u00dfe P2"}}}
+  ],
+  "103486": [
+    {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 7, "category": 1, "text": "bis 10", "validData": true}, "space": {"id": 103486, "label": "P2", "name": "Bahnhof Stuttgart-Vaihingen: Reservierbare PKW-Stellpl\u00e4tze", "nameDisplay": "Bahnhof Stuttgart-Vaihingen: Reservierbare PKW-Stellpl\u00e4tze", "station": {"id": 6087, "name": "Stuttgart-Vaihingen"}, "title": "Stuttgart-Vaihingen P2 Bahnhof Stuttgart-Vaihingen: Reservierbare PKW-Stellpl\u00e4tze"}}}
+  ]
+}
