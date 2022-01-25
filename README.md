@@ -19,41 +19,41 @@ Each table shows the top-ten most-changed objects.
 
 ### free parking lots
  
-**50** objects, **55,547** snapshots, **44,041** changes (2020-01-25 23:27:15 - 2022-01-23 23:15:01)
+**50** objects, **55,643** snapshots, **44,120** changes (2020-01-25 23:27:15 - 2022-01-25 00:30:01)
 
 |     id | name                                                     |   num changes |
 |-------:|:---------------------------------------------------------|--------------:|
-| 100054 | Düren P1 Parkplatz Ludwig-Erhardt-Platz                  |          5287 |
-| 100084 | Frankfurt (Main) Hbf Bustasche                           |          3994 |
-| 100201 | Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1           |          3608 |
-| 100083 | Frankfurt (Main) Hbf P3 Vorfahrt II                      |          3571 |
-| 100280 | Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          2774 |
-| 100279 | Bad Cannstatt P2 Parkhaus Wilhelmsplatz Ebenen -1 bis 6  |          2354 |
+| 100054 | Düren P1 Parkplatz Ludwig-Erhardt-Platz                  |          5297 |
+| 100084 | Frankfurt (Main) Hbf Bustasche                           |          4014 |
+| 100201 | Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1           |          3617 |
+| 100083 | Frankfurt (Main) Hbf P3 Vorfahrt II                      |          3574 |
+| 100280 | Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          2782 |
+| 100279 | Bad Cannstatt P2 Parkhaus Wilhelmsplatz Ebenen -1 bis 6  |          2358 |
 | 100090 | Freiburg (Breisgau) Hbf P1 Tiefgarage am Bahnhof         |          1749 |
-| 100291 | Ulm Hbf P2 Parkplatz                                     |          1732 |
-| 100023 | Berlin Ostbahnhof P1 Parkplatz                           |          1702 |
-| 100066 | Duisburg Hbf P2 Parkhaus UCI                             |          1476 |
+| 100291 | Ulm Hbf P2 Parkplatz                                     |          1734 |
+| 100023 | Berlin Ostbahnhof P1 Parkplatz                           |          1706 |
+| 100066 | Duisburg Hbf P2 Parkhaus UCI                             |          1478 |
 
 ### elevator status
  
-**3,766** objects, **12,077** snapshots, **350,423** changes (2020-01-25 23:16:01 - 2022-01-24 01:01:01)
+**3,766** objects, **12,101** snapshots, **351,168** changes (2020-01-25 23:16:01 - 2022-01-25 01:01:01)
 
 |       id | name                                                 |   num changes |
 |---------:|:-----------------------------------------------------|--------------:|
-| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1338 |
-| 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1334 |
-| 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1314 |
-| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1041 |
-| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |           989 |
-| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |           983 |
-| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |           979 |
-| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |           974 |
-| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |           972 |
-| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |           962 |
+| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1340 |
+| 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1336 |
+| 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1316 |
+| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1043 |
+| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |           991 |
+| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |           985 |
+| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |           981 |
+| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |           976 |
+| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |           974 |
+| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |           964 |
 
 ### stations
  
-**5,404** objects, **695** snapshots, **56,104** changes (2020-01-27 12:43:06 - 2022-01-18 07:05:01)
+**5,404** objects, **696** snapshots, **56,104** changes (2020-01-27 12:43:06 - 2022-01-18 07:05:01)
 
 |   id | name                         |   num changes |
 |-----:|:-----------------------------|--------------:|
