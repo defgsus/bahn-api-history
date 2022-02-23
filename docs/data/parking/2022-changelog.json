@@ -309,7 +309,15 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-20T14:15:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-20T14:45:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-21T12:30:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T12:45:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T12:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T08:30:01"},
+    {"changes": {"remove": [{"path": "allocation.capacity"}, {"path": "allocation.category"}, {"path": "allocation.text"}], "replace": [{"path": "allocation.validData", "value": false}]}, "date": "2022-02-22T10:00:01"},
+    {"changes": {"add": [{"path": "allocation.capacity", "value": 90}, {"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}], "replace": [{"path": "allocation.validData", "value": true}]}, "date": "2022-02-22T10:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T12:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T12:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T12:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T13:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T13:15:01"}
   ],
   "100024": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 170, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100024, "label": "P2", "name": "Tiefgarage Berlin Ostbahnhof", "nameDisplay": "Tiefgarage Berlin Ostbahnhof", "station": {"id": 530, "name": "Berlin Ostbahnhof"}, "title": "Berlin Ostbahnhof P2 Tiefgarage Berlin Ostbahnhof"}}},
@@ -344,7 +352,9 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-19T14:15:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-20T09:00:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-20T09:30:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-20T09:45:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-20T09:45:01"},
+    {"changes": {"remove": [{"path": "allocation.capacity"}, {"path": "allocation.category"}, {"path": "allocation.text"}], "replace": [{"path": "allocation.validData", "value": false}]}, "date": "2022-02-22T10:00:01"},
+    {"changes": {"add": [{"path": "allocation.capacity", "value": 170}, {"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}], "replace": [{"path": "allocation.validData", "value": true}]}, "date": "2022-02-22T10:30:01"}
   ],
   "100025": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 175, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100025, "label": "P1", "name": "Parkhaus Bahnhof Berlin S\u00fcdkreuz", "nameDisplay": "Parkhaus Bahnhof Berlin S\u00fcdkreuz", "station": {"id": 4859, "name": "Berlin S\u00fcdkreuz"}, "title": "Berlin S\u00fcdkreuz P1 Parkhaus Bahnhof Berlin S\u00fcdkreuz"}}},
@@ -509,7 +519,13 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-21T09:00:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-21T12:30:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-21T13:30:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T14:15:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T14:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T07:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T07:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T08:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T09:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T12:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T14:00:01"}
   ],
   "100050": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 54, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100050, "label": "P1", "name": "Parkplatz Bahnhof Coburg Vorderseite", "nameDisplay": "Parkplatz Bahnhof Coburg Lossaustra\u00dfe", "station": {"id": 1059, "name": "Coburg"}, "title": "Coburg P1 Parkplatz Bahnhof Coburg Lossaustra\u00dfe"}}}
@@ -1382,7 +1398,13 @@
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2022-02-21T16:00:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2022-02-21T16:15:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2022-02-21T17:15:01"},
-    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2022-02-21T17:30:01"}
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2022-02-21T17:30:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 194}]}, "date": "2022-02-22T06:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2022-02-22T06:30:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2022-02-22T12:30:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2022-02-22T12:45:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 196}]}, "date": "2022-02-22T17:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 197}]}, "date": "2022-02-22T17:30:01"}
   ],
   "100058": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 1085, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100058, "label": "P3", "name": "Parkhaus D\u00fcsseldorf Hauptbahnhof", "nameDisplay": "Parkhaus D\u00fcsseldorf Hauptbahnhof", "station": {"id": 1401, "name": "D\u00fcsseldorf Hbf"}, "title": "D\u00fcsseldorf Hbf P3 Parkhaus D\u00fcsseldorf Hauptbahnhof"}}}
@@ -1492,7 +1514,9 @@
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 390}]}, "date": "2022-02-20T05:15:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 355}]}, "date": "2022-02-20T08:15:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 315}]}, "date": "2022-02-21T05:15:01"},
-    {"changes": {"replace": [{"path": "allocation.capacity", "value": 275}]}, "date": "2022-02-21T08:45:01"}
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 275}]}, "date": "2022-02-21T08:45:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 305}]}, "date": "2022-02-22T05:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 265}]}, "date": "2022-02-22T08:45:01"}
   ],
   "100073": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 305, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100073, "label": "P1", "name": "Parkhaus Essen Hauptbahnhof", "nameDisplay": "Parkhaus Essen Hauptbahnhof", "station": {"id": 1690, "name": "Essen Hbf"}, "title": "Essen Hbf P1 Parkhaus Essen Hauptbahnhof"}}}
@@ -1875,7 +1899,13 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-21T17:00:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-21T17:30:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-21T17:45:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-21T18:30:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-21T18:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T07:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T16:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T17:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T17:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T18:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T18:15:01"}
   ],
   "100084": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 60, "category": 3, "text": "> 30", "validData": true}, "space": {"id": 100084, "label": "P4", "name": "Frankfurt (Main) Hbf Bustasche", "nameDisplay": "Frankfurt (Main) Hbf Bustasche", "station": {"id": 1866, "name": "Frankfurt (Main) Hbf"}, "title": "Frankfurt (Main) Hbf P4 Frankfurt (Main) Hbf Bustasche"}}},
@@ -2368,7 +2398,15 @@
     {"changes": {"remove": [{"path": "allocation.category"}, {"path": "allocation.text"}]}, "date": "2022-02-21T11:45:01"},
     {"changes": {"add": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T12:15:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-21T14:00:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T14:15:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T14:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T08:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T09:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T09:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T10:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T10:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T10:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T10:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T13:00:01"}
   ],
   "100090": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 158, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100090, "label": "P4", "name": "Tiefgarage am Bahnhof", "nameDisplay": "Freiburg (Breisgau) Hbf Tiefgarage am Bahnhof", "station": {"id": 1893, "name": "Freiburg (Breisgau) Hbf"}, "title": "Freiburg (Breisgau) Hbf P4 Freiburg (Breisgau) Hbf Tiefgarage am Bahnhof"}}},
@@ -2421,7 +2459,9 @@
   ],
   "100114": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 360, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100114, "label": "P3", "name": "Tiefgarage Charlottencenter", "nameDisplay": "Tiefgarage Charlottencenter", "station": {"id": 2498, "name": "Halle (Saale) Hbf"}, "title": "Halle (Saale) Hbf P3 Tiefgarage Charlottencenter"}}},
-    {"changes": {"replace": [{"path": "allocation.capacity", "value": 358}]}, "date": "2022-01-20T09:45:01"}
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 358}]}, "date": "2022-01-20T09:45:01"},
+    {"changes": {"remove": [{"path": "allocation.capacity"}, {"path": "allocation.category"}, {"path": "allocation.text"}], "replace": [{"path": "allocation.validData", "value": false}]}, "date": "2022-02-22T14:30:01"},
+    {"changes": {"add": [{"path": "allocation.capacity", "value": 358}, {"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}], "replace": [{"path": "allocation.validData", "value": true}]}, "date": "2022-02-22T16:15:01"}
   ],
   "100115": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 387, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100115, "label": "P1", "name": "Parkhaus Hauptbahnhof Centrum H\u00fchnerposten", "nameDisplay": "Parkhaus Hauptbahnhof Centrum H\u00fchnerposten", "station": {"id": 2514, "name": "Hamburg Hbf"}, "title": "Hamburg Hbf P1 Parkhaus Hauptbahnhof Centrum H\u00fchnerposten"}}},
@@ -2523,7 +2563,11 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-21T10:00:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-21T11:30:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-21T13:30:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T15:15:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T15:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T08:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T09:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T12:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T14:45:01"}
   ],
   "100158": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 249, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100158, "label": "P2", "name": "Park+Ride-Parkhaus Hauptbahnhof", "nameDisplay": "Park+Ride-Parkhaus Kaiserslautern Hbf", "station": {"id": 3082, "name": "Kaiserslautern Hbf"}, "title": "Kaiserslautern Hbf P2 Park+Ride-Parkhaus Kaiserslautern Hbf"}}},
@@ -2886,7 +2930,23 @@
     {"changes": {"add": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-21T15:15:01"},
     {"changes": {"remove": [{"path": "allocation.category"}, {"path": "allocation.text"}]}, "date": "2022-02-21T15:45:01"},
     {"changes": {"add": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-21T16:00:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-21T17:30:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-21T17:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T06:45:01"},
+    {"changes": {"remove": [{"path": "allocation.category"}, {"path": "allocation.text"}]}, "date": "2022-02-22T07:15:01"},
+    {"changes": {"add": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T07:45:01"},
+    {"changes": {"remove": [{"path": "allocation.category"}, {"path": "allocation.text"}]}, "date": "2022-02-22T08:15:01"},
+    {"changes": {"add": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T11:30:01"},
+    {"changes": {"remove": [{"path": "allocation.category"}, {"path": "allocation.text"}]}, "date": "2022-02-22T11:45:01"},
+    {"changes": {"add": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T12:00:01"},
+    {"changes": {"remove": [{"path": "allocation.category"}, {"path": "allocation.text"}]}, "date": "2022-02-22T14:00:01"},
+    {"changes": {"add": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T14:15:01"},
+    {"changes": {"remove": [{"path": "allocation.category"}, {"path": "allocation.text"}]}, "date": "2022-02-22T14:30:01"},
+    {"changes": {"add": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T14:45:01"},
+    {"changes": {"remove": [{"path": "allocation.category"}, {"path": "allocation.text"}]}, "date": "2022-02-22T15:00:01"},
+    {"changes": {"add": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T15:15:01"},
+    {"changes": {"remove": [{"path": "allocation.category"}, {"path": "allocation.text"}]}, "date": "2022-02-22T15:45:01"},
+    {"changes": {"add": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T16:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T17:00:01"}
   ],
   "100202": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 160, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100202, "label": "P4", "name": "Tiefgarage Bonifazius-T\u00fcrme UG -2", "nameDisplay": "Mainz Hbf Tiefgarage Bonifazius-T\u00fcrme UG -2", "station": {"id": 3898, "name": "Mainz Hbf"}, "title": "Mainz Hbf P4 Mainz Hbf Tiefgarage Bonifazius-T\u00fcrme UG -2"}}},
@@ -3186,7 +3246,15 @@
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 67}, {"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-21T11:45:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-21T12:30:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-21T13:15:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T16:30:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T16:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T06:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T07:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T08:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T08:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T10:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T13:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T13:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T16:45:01"}
   ],
   "100275": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 870, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100275, "label": "P1", "name": "Stuttgart Hbf Tiefgarage LBBW", "nameDisplay": "Stuttgart Hbf Tiefgarage LBBW", "station": {"id": 6071, "name": "Stuttgart Hbf"}, "title": "Stuttgart Hbf P1 Stuttgart Hbf Tiefgarage LBBW"}}}
@@ -3302,7 +3370,11 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-18T08:30:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-18T12:30:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-21T08:30:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T14:15:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T14:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T08:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T10:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T12:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T14:45:01"}
   ],
   "100279": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 134, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100279, "label": "P2", "name": "Parkhaus Wilhelmsplatz Ebenen -1 bis 6", "nameDisplay": "Bad Cannstatt Parkhaus Wilhelmsplatz Ebenen -1 bis 6", "station": {"id": 6077, "name": "Stuttgart-Bad Cannstatt"}, "title": "Stuttgart-Bad Cannstatt P2 Bad Cannstatt Parkhaus Wilhelmsplatz Ebenen -1 bis 6"}}},
@@ -3474,7 +3546,11 @@
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 144}]}, "date": "2022-02-19T14:15:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 110}]}, "date": "2022-02-20T21:15:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 117}]}, "date": "2022-02-21T14:15:01"},
-    {"changes": {"replace": [{"path": "allocation.capacity", "value": 134}]}, "date": "2022-02-21T19:15:01"}
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 134}]}, "date": "2022-02-21T19:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 102}]}, "date": "2022-02-22T06:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T09:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T11:00:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 134}]}, "date": "2022-02-22T19:15:01"}
   ],
   "100280": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 43, "category": 3, "text": "> 30", "validData": true}, "space": {"id": 100280, "label": "P3", "name": "Parkhaus Wilhelmsplatz Ebenen -3 und -2", "nameDisplay": "Bad Cannstatt Parkhaus Wilhelmsplatz Ebenen -3 und -2", "station": {"id": 6077, "name": "Stuttgart-Bad Cannstatt"}, "title": "Stuttgart-Bad Cannstatt P3 Bad Cannstatt Parkhaus Wilhelmsplatz Ebenen -3 und -2"}}},
@@ -3706,7 +3782,11 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-21T05:45:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-21T06:45:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-21T15:00:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-21T19:30:02"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-21T19:30:02"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T05:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 1}, {"path": "allocation.text", "value": "bis 10"}]}, "date": "2022-02-22T07:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T15:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T18:45:01"}
   ],
   "100281": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 68, "category": 3, "text": "> 30", "validData": true}, "space": {"id": 100281, "label": "P1", "name": "Parkplatz Bahnhof Stuttgart-Vaihingen", "nameDisplay": "Parkplatz Bahnhof Stuttgart-Vaihingen", "station": {"id": 6087, "name": "Stuttgart-Vaihingen"}, "title": "Stuttgart-Vaihingen P1 Parkplatz Bahnhof Stuttgart-Vaihingen"}}},
@@ -3915,7 +3995,17 @@
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-21T05:30:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-21T06:45:01"},
     {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-21T13:15:01"},
-    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T16:30:01"}
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-21T16:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T06:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T08:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T09:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T09:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T12:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T12:30:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T12:45:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 2}, {"path": "allocation.text", "value": "> 10"}]}, "date": "2022-02-22T13:00:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 3}, {"path": "allocation.text", "value": "> 30"}]}, "date": "2022-02-22T13:15:01"},
+    {"changes": {"replace": [{"path": "allocation.category", "value": 4}, {"path": "allocation.text", "value": "> 50"}]}, "date": "2022-02-22T18:00:01"}
   ],
   "100291": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 138, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100291, "label": "P2", "name": "Parkplatz Ulm Hauptbahnhof", "nameDisplay": "Parkplatz Ulm Hauptbahnhof", "station": {"id": 6323, "name": "Ulm Hbf"}, "title": "Ulm Hbf P2 Parkplatz Ulm Hauptbahnhof"}}},
@@ -4069,7 +4159,9 @@
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 108}]}, "date": "2022-02-20T04:15:02"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 143}]}, "date": "2022-02-20T21:15:01"},
     {"changes": {"replace": [{"path": "allocation.capacity", "value": 93}]}, "date": "2022-02-21T05:15:01"},
-    {"changes": {"replace": [{"path": "allocation.capacity", "value": 123}]}, "date": "2022-02-21T16:15:01"}
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 123}]}, "date": "2022-02-21T16:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 93}]}, "date": "2022-02-22T05:15:01"},
+    {"changes": {"replace": [{"path": "allocation.capacity", "value": 123}]}, "date": "2022-02-22T16:15:01"}
   ],
   "100308": [
     {"date": "2022-01-01T00:00:01", "init": {"allocation": {"capacity": 108, "category": 4, "text": "> 50", "validData": true}, "space": {"id": 100308, "label": "P1", "name": "Parkdeck Wolfsburg Hauptbahnhof", "nameDisplay": "Parkdeck Wolfsburg Hauptbahnhof", "station": {"id": 6859, "name": "Wolfsburg Hbf"}, "title": "Wolfsburg Hbf P1 Parkdeck Wolfsburg Hauptbahnhof"}}}
