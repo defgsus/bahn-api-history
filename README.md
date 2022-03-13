@@ -36,24 +36,24 @@ Each table shows the top-ten most-changed objects.
 
 ### elevator status
  
-**3,796** objects, **13,179** snapshots, **379,680** changes (2020-01-25 23:16:01 - 2022-03-12 01:01:01)
+**3,796** objects, **13,203** snapshots, **380,153** changes (2020-01-25 23:16:01 - 2022-03-13 01:01:01)
 
 |       id | name                                                 |   num changes |
 |---------:|:-----------------------------------------------------|--------------:|
-| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1430 |
-| 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1426 |
-| 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1406 |
-| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1141 |
-| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1087 |
-| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1071 |
-| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |          1071 |
-| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1068 |
-| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1063 |
-| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1058 |
+| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1432 |
+| 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1428 |
+| 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1408 |
+| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1143 |
+| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1089 |
+| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1073 |
+| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |          1073 |
+| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1070 |
+| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1065 |
+| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1060 |
 
 ### stations
  
-**5,405** objects, **739** snapshots, **56,204** changes (2020-01-27 12:43:06 - 2022-03-10 07:05:01)
+**5,405** objects, **740** snapshots, **56,204** changes (2020-01-27 12:43:06 - 2022-03-10 07:05:01)
 
 |   id | name                         |   num changes |
 |-----:|:-----------------------------|--------------:|
