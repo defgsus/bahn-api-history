@@ -9,7 +9,7 @@ import {paginate_table} from "./table";
 const DEFAULT_STATE = {
     error: null,
     api_types: ["stations", "elevators", "parking"],
-    api_years: ["2020", "2021"],
+    api_years: ["2020", "2021", "2022"],
     api_type: "stations",
     api_year: "2020",
     changelogs: null,
