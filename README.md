@@ -19,11 +19,11 @@ Each table shows the top-ten most-changed objects.
 
 ### free parking lots
  
-**50** objects, **64,936** snapshots, **49,276** changes (2020-01-25 23:27:15 - 2022-05-09 23:15:01)
+**50** objects, **65,031** snapshots, **49,320** changes (2020-01-25 23:27:15 - 2022-05-10 23:00:01)
 
 |     id | name                                                     |   num changes |
 |-------:|:---------------------------------------------------------|--------------:|
-| 100054 | Düren P1 Parkplatz Ludwig-Erhardt-Platz                  |          6996 |
+| 100054 | Düren P1 Parkplatz Ludwig-Erhardt-Platz                  |          7028 |
 | 100084 | Frankfurt (Main) Hbf Bustasche                           |          4310 |
 | 100201 | Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1           |          3890 |
 | 100083 | Frankfurt (Main) Hbf P3 Vorfahrt II                      |          3872 |
@@ -36,24 +36,24 @@ Each table shows the top-ten most-changed objects.
 
 ### elevator status
  
-**3,821** objects, **14,570** snapshots, **417,096** changes (2020-01-25 23:16:01 - 2022-05-10 00:01:01)
+**3,821** objects, **14,594** snapshots, **417,822** changes (2020-01-25 23:16:01 - 2022-05-11 00:01:02)
 
 |       id | name                                                 |   num changes |
 |---------:|:-----------------------------------------------------|--------------:|
-| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1546 |
-| 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1530 |
+| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1548 |
+| 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1532 |
 | 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1520 |
-| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1257 |
-| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1205 |
-| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1202 |
-| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |          1189 |
-| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1182 |
-| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1178 |
-| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1174 |
+| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1259 |
+| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1207 |
+| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1204 |
+| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |          1191 |
+| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1184 |
+| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1182 |
+| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1176 |
 
 ### stations
  
-**5,405** objects, **796** snapshots, **61,671** changes (2020-01-27 12:43:06 - 2022-05-07 06:05:01)
+**5,405** objects, **797** snapshots, **61,672** changes (2020-01-27 12:43:06 - 2022-05-10 06:05:01)
 
 |   id | name                         |   num changes |
 |-----:|:-----------------------------|--------------:|
