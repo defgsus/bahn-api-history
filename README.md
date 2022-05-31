@@ -36,24 +36,24 @@ Each table shows the top-ten most-changed objects.
 
 ### elevator status
  
-**3,831** objects, **15,049** snapshots, **430,499** changes (2020-01-25 23:16:01 - 2022-05-30 00:01:01)
+**3,832** objects, **15,073** snapshots, **431,237** changes (2020-01-25 23:16:01 - 2022-05-31 00:01:01)
 
 |       id | name                                                 |   num changes |
 |---------:|:-----------------------------------------------------|--------------:|
-| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1588 |
+| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1590 |
 | 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1560 |
-| 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1558 |
-| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1295 |
-| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1243 |
-| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1242 |
-| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |          1234 |
-| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1226 |
-| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1222 |
-| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1214 |
+| 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1560 |
+| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1296 |
+| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1244 |
+| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1244 |
+| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |          1236 |
+| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1228 |
+| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1224 |
+| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1216 |
 
 ### stations
  
-**5,405** objects, **816** snapshots, **61,690** changes (2020-01-27 12:43:06 - 2022-05-29 06:05:01)
+**5,405** objects, **817** snapshots, **61,692** changes (2020-01-27 12:43:06 - 2022-05-30 06:05:01)
 
 |   id | name                         |   num changes |
 |-----:|:-----------------------------|--------------:|
