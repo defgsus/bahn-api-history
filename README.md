@@ -19,41 +19,41 @@ Each table shows the top-ten most-changed objects.
 
 ### free parking lots
  
-**288** objects, **67,062** snapshots, **63,438** changes (2020-01-25 23:27:15 - 2022-06-20 23:30:01)
+**288** objects, **67,158** snapshots, **64,176** changes (2020-01-25 23:27:15 - 2022-06-22 00:00:01)
 
 |     id | name                                                     |   num changes |
 |-------:|:---------------------------------------------------------|--------------:|
-| 100054 | Düren P1 Parkplatz Ludwig-Erhardt-Platz                  |          7591 |
+| 100054 | Düren P1 Parkplatz Ludwig-Erhardt-Platz                  |          7616 |
 | 100084 | Frankfurt (Main) Hbf Bustasche                           |          4311 |
-| 100201 | Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1           |          3989 |
+| 100201 | Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1           |          4001 |
 | 100083 | Frankfurt (Main) Hbf P3 Vorfahrt II                      |          3984 |
-| 100280 | Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          3084 |
-| 100279 | Bad Cannstatt P2 Parkhaus Wilhelmsplatz Ebenen -1 bis 6  |          2564 |
-| 100023 | Berlin Ostbahnhof P1 Parkplatz                           |          2037 |
-| 100291 | Ulm Hbf P2 Parkplatz                                     |          1908 |
+| 100280 | Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          3088 |
+| 100279 | Bad Cannstatt P2 Parkhaus Wilhelmsplatz Ebenen -1 bis 6  |          2566 |
+| 100023 | Berlin Ostbahnhof P1 Parkplatz                           |          2042 |
+| 100291 | Ulm Hbf P2 Parkplatz                                     |          1915 |
 | 100090 | Freiburg (Breisgau) Hbf P1 Tiefgarage am Bahnhof         |          1772 |
-| 100066 | Duisburg Hbf P2 Parkhaus UCI                             |          1606 |
+| 100066 | Duisburg Hbf P2 Parkhaus UCI                             |          1608 |
 
 ### elevator status
  
-**3,853** objects, **15,565** snapshots, **446,377** changes (2020-01-25 23:16:01 - 2022-06-21 00:01:01)
+**3,853** objects, **15,589** snapshots, **447,182** changes (2020-01-25 23:16:01 - 2022-06-22 00:01:01)
 
 |       id | name                                                 |   num changes |
 |---------:|:-----------------------------------------------------|--------------:|
 | 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1619 |
 | 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1589 |
 | 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1589 |
-| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1339 |
-| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1288 |
-| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1287 |
-| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |          1280 |
-| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1268 |
-| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1266 |
-| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1258 |
+| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1341 |
+| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1290 |
+| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1289 |
+| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |          1282 |
+| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1270 |
+| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1268 |
+| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1260 |
 
 ### stations
  
-**5,406** objects, **838** snapshots, **61,771** changes (2020-01-27 12:43:06 - 2022-06-20 06:05:01)
+**5,406** objects, **839** snapshots, **61,771** changes (2020-01-27 12:43:06 - 2022-06-20 06:05:01)
 
 |   id | name                         |   num changes |
 |-----:|:-----------------------------|--------------:|
