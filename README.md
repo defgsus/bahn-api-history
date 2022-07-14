@@ -19,54 +19,54 @@ Each table shows the top-ten most-changed objects.
 
 ### free parking lots
  
-**288** objects, **69,170** snapshots, **79,516** changes (2020-01-25 23:27:15 - 2022-07-13 00:00:01)
+**288** objects, **69,266** snapshots, **80,284** changes (2020-01-25 23:27:15 - 2022-07-14 00:00:01)
 
 |     id | name                                                     |   num changes |
 |-------:|:---------------------------------------------------------|--------------:|
 | 100054 | Düren P1 Parkplatz Ludwig-Erhardt-Platz                  |          7814 |
 | 100084 | Frankfurt (Main) Hbf Bustasche                           |          4311 |
-| 100083 | Frankfurt (Main) Hbf P3 Vorfahrt II                      |          4115 |
-| 100201 | Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1           |          4091 |
-| 100280 | Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          3186 |
-| 100279 | Bad Cannstatt P2 Parkhaus Wilhelmsplatz Ebenen -1 bis 6  |          2636 |
+| 100083 | Frankfurt (Main) Hbf P3 Vorfahrt II                      |          4125 |
+| 100201 | Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1           |          4095 |
+| 100280 | Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          3194 |
+| 100279 | Bad Cannstatt P2 Parkhaus Wilhelmsplatz Ebenen -1 bis 6  |          2638 |
 | 100023 | Berlin Ostbahnhof P1 Parkplatz                           |          2138 |
-| 100291 | Ulm Hbf P2 Parkplatz                                     |          1981 |
+| 100291 | Ulm Hbf P2 Parkplatz                                     |          1984 |
 | 100090 | Freiburg (Breisgau) Hbf P1 Tiefgarage am Bahnhof         |          1773 |
-| 100066 | Duisburg Hbf P2 Parkhaus UCI                             |          1656 |
+| 100066 | Duisburg Hbf P2 Parkhaus UCI                             |          1658 |
 
 ### elevator status
  
-**3,866** objects, **16,089** snapshots, **462,615** changes (2020-01-25 23:16:01 - 2022-07-13 00:01:01)
+**3,866** objects, **16,113** snapshots, **463,420** changes (2020-01-25 23:16:01 - 2022-07-14 00:01:01)
 
 |       id | name                                                 |   num changes |
 |---------:|:-----------------------------------------------------|--------------:|
-| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1656 |
-| 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1628 |
-| 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1628 |
-| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1385 |
-| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1330 |
+| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1658 |
+| 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1630 |
+| 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1630 |
+| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1387 |
+| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1332 |
 | 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |          1323 |
-| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1314 |
-| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1312 |
-| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1302 |
-| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1301 |
+| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1316 |
+| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1314 |
+| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1304 |
+| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1303 |
 
 ### stations
  
-**5,406** objects, **860** snapshots, **61,776** changes (2020-01-27 12:43:06 - 2022-07-07 06:05:01)
+**5,406** objects, **861** snapshots, **67,178** changes (2020-01-27 12:43:06 - 2022-07-13 06:05:01)
 
 |   id | name                         |   num changes |
 |-----:|:-----------------------------|--------------:|
-| 1947 | Friedrichshafen Stadt        |            22 |
-| 6714 | Westerland (Sylt)            |            22 |
-| 2514 | Hamburg Hbf                  |            21 |
-| 3631 | Leipzig Hbf                  |            21 |
-| 1821 | Berlin-Schönefeld Flughafen  |            20 |
-| 1859 | Frankfurt (Oder)             |            20 |
-| 4234 | München Hbf                  |            20 |
-| 8192 | Flughafen BER - Terminal 1-2 |            20 |
-| 1906 | Freilassing                  |            19 |
-| 6418 | Villingen (Schwarzw)         |            19 |
+| 1947 | Friedrichshafen Stadt        |            23 |
+| 6714 | Westerland (Sylt)            |            23 |
+| 2514 | Hamburg Hbf                  |            22 |
+| 3631 | Leipzig Hbf                  |            22 |
+| 1821 | Berlin-Schönefeld Flughafen  |            21 |
+| 1859 | Frankfurt (Oder)             |            21 |
+| 4234 | München Hbf                  |            21 |
+| 8192 | Flughafen BER - Terminal 1-2 |            21 |
+| 1906 | Freilassing                  |            20 |
+| 6418 | Villingen (Schwarzw)         |            20 |
 
 
 ## Data
