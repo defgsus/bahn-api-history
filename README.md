@@ -19,41 +19,41 @@ Each table shows the top-ten most-changed objects.
 
 ### free parking lots
  
-**288** objects, **73,906** snapshots, **116,220** changes (2020-01-25 23:27:15 - 2022-09-01 00:00:01)
+**288** objects, **73,942** snapshots, **116,433** changes (2020-01-25 23:27:15 - 2022-09-01 09:00:01)
 
 |     id | name                                                     |   num changes |
 |-------:|:---------------------------------------------------------|--------------:|
 | 100054 | Düren P1 Parkplatz Ludwig-Erhardt-Platz                  |          7820 |
-| 100083 | Frankfurt (Main) Hbf P3 Vorfahrt II                      |          4620 |
+| 100083 | Frankfurt (Main) Hbf P3 Vorfahrt II                      |          4621 |
+| 100201 | Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1           |          4314 |
 | 100084 | Frankfurt (Main) Hbf Bustasche                           |          4311 |
-| 100201 | Mainz Hbf P3 Tiefgarage Bonifazius-Türme UG -1           |          4310 |
-| 100280 | Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          3397 |
-| 100279 | Bad Cannstatt P2 Parkhaus Wilhelmsplatz Ebenen -1 bis 6  |          2800 |
+| 100280 | Bad Cannstatt P3 Parkhaus Wilhelmsplatz Ebenen -3 und -2 |          3399 |
+| 100279 | Bad Cannstatt P2 Parkhaus Wilhelmsplatz Ebenen -1 bis 6  |          2801 |
 | 100023 | Berlin Ostbahnhof P1 Parkplatz                           |          2366 |
-| 100291 | Ulm Hbf P2 Parkplatz                                     |          2129 |
+| 100291 | Ulm Hbf P2 Parkplatz                                     |          2131 |
 | 100090 | Freiburg (Breisgau) Hbf P1 Tiefgarage am Bahnhof         |          1776 |
-| 100066 | Duisburg Hbf P2 Parkhaus UCI                             |          1757 |
+| 100066 | Duisburg Hbf P2 Parkhaus UCI                             |          1759 |
 
 ### elevator status
  
-**3,894** objects, **17,269** snapshots, **499,976** changes (2020-01-25 23:16:01 - 2022-09-01 00:01:01)
+**3,894** objects, **17,278** snapshots, **500,332** changes (2020-01-25 23:16:01 - 2022-09-01 09:01:01)
 
 |       id | name                                                 |   num changes |
 |---------:|:-----------------------------------------------------|--------------:|
-| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1754 |
-| 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1726 |
-| 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1726 |
-| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1491 |
-| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1429 |
-| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1418 |
-| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1412 |
-| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |          1406 |
-| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1400 |
-| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1399 |
+| 10556568 | Tuttlingen ELEVATOR zum Gleis 4/5                    |          1755 |
+| 10556567 | Tuttlingen ELEVATOR zum Gleis 2/3                    |          1727 |
+| 10556569 | Tuttlingen ELEVATOR zu Gleis 1                       |          1727 |
+| 10248843 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1492 |
+| 10248859 | Regensburg Hbf ESCALATOR von Empfangshalle zu Brücke |          1430 |
+| 10460422 | Diepholz ELEVATOR zu Gleis 2/3                       |          1419 |
+| 10354470 | Osnabrück Hbf ELEVATOR zu Gleis 1                    |          1414 |
+| 10417241 | Osnabrück Hbf ELEVATOR zu Gleis 4/5                  |          1408 |
+| 10417240 | Osnabrück Hbf ELEVATOR zu Gleis 2/3                  |          1401 |
+| 10466017 | Laupheim West ELEVATOR zu Gleis 2/3                  |          1401 |
 
 ### stations
  
-**5,406** objects, **909** snapshots, **67,245** changes (2020-01-27 12:43:06 - 2022-08-31 06:05:01)
+**5,406** objects, **910** snapshots, **67,255** changes (2020-01-27 12:43:06 - 2022-09-01 06:05:01)
 
 |   id | name                         |   num changes |
 |-----:|:-----------------------------|--------------:|
