@@ -2,15 +2,16 @@
 
 There was this [monumental talk](https://media.ccc.de/v/36c3-10652-bahnmining_-_punktlichkeit_ist_eine_zier)
 in late 2019 about the *correctness* of the punctuality statistics published by
-Deutsche Bahn, which got me interested in [api.deutschebahn.com](https://api.deutschebahn.com).
+Deutsche Bahn, which got me interested in the [deutschebahn apis](https://developers.deutschebahn.com/db-api-marketplace/apis).
 
 This repo contains non of the train schedule data. Instead it has change-logs of the
-[parking api](https://developer.deutschebahn.com/store/apis/info?name=BahnPark&version=v1&provider=DBOpenData),
-[station data api](https://developer.deutschebahn.com/store/apis/info?name=StaDa-Station_Data&version=v2&provider=DBOpenData)
-and the [station facilities status api](https://developer.deutschebahn.com/store/apis/info?name=FaSta-Station_Facilities_Status&version=v2&provider=DBOpenData)
-(status of elevators and escalators), **collected since late January 2020**.
+**parking api**, **station data api** and the **station facilities status api**
+(status of elevators and escalators), collected since late **January 2020**.
 
 Everything is browsable in the [static data page](https://defgsus.github.io/bahn-api-history/).
+
+**UPDATE:** In Sept. 2022 the Bahn APIs and access have changed and my code has not been
+updated for a couple of months, so there is a data gap.
 
 
 ## Summary
@@ -37,21 +38,24 @@ The APIs are sampled with separate cronjobs running these shell commands:
 ```shell script
 # parking each 15 minutes
 curl -X GET --header "Accept: application/json" \
-    --header "Authorization: Bearer <YOUR_API_TOKEN>" \
-    "https://api.deutschebahn.com/bahnpark/v1/spaces/occupancies" \
+    --header "DB-Client-ID: ..." \
+    --header "DB-Api-Key: ..." \
+    "https://apis.deutschebahn.com/db-api-marketplace/apis/parking-information/db-bahnpark/v2/parking-facilities" \
     > `date -Is -u`.json
-
+    
 # stations once a day
 curl -X GET --header "Accept: application/json" \
-    --header "Authorization: Bearer <YOUR_API_TOKEN>" \
-    "https://api.deutschebahn.com/stada/v2/stations?searchstring=*" \
+    --header "DB-Client-ID: ..." \
+    --header "DB-Api-Key: ..." \
+    "https://apis.deutschebahn.com/db-api-marketplace/apis/station-data/v2/stations?searchstring=*" \
     > `date -Is -u`.json
 
 # elevators each hour
 curl -X GET --header "Accept: application/json" \
-    --header "Authorization: Bearer <YOUR_API_TOKEN>" \
-    "https://api.deutschebahn.com/fasta/v2/facilities?type=ESCALATOR,ELEVATOR"
-    > `date -Is -u`.json
+    --header "DB-Client-ID: ..." \
+    --header "DB-Api-Key: ..." \
+    "https://apis.deutschebahn.com/db-api-marketplace/apis/fasta/v2/facilities?type=ESCALATOR,ELEVATOR" \
+    > `date -Is -u`-facilities.json
 ```
 This simple setup does no error handling. If the endpoint is temporarily busy
 the snapshot is lost.
